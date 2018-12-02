@@ -28,7 +28,7 @@ public class LearnDaoImpl implements LearnDao {
 
 	@Override
 	public int add(LearnResource learnResource) {
-		return jdbcTemplate.update("INSERT INTO learn_resource(author,title,url) values(?,?,?) ",
+		return jdbcTemplate.update("INSERT INTO learn_resource" + "(author,title,url) values(?,?,?) ",
 				learnResource.getAuthor(), learnResource.getTitle(), learnResource.getUrl());
 	}
 
