@@ -6,9 +6,14 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.example.demo.domain.User;
 
 /**
  * 登录控制器
@@ -19,22 +24,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class LoginController {
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@ResponseBody
 	public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		String userName = request.getParameter("userName");
-		String passWord = request.getParameter("passWord");
-		// 这里写死掉了，没有去数据库查询，省时间
-		if (null == userName || "".equals(userName) || !"wx".equals(userName)) {
-			map.put("result", 0);
-			return map;
+		String password = request.getParameter("passWord");
+		if (!userName.equals("") && password != "") {
+			User user = new User(userName, password);
+			request.getSession().setAttribute("user", user);
+			map.put("result", "1");
+		} else {
+			map.put("result", "0");
 		}
-		if (null == passWord || "".equals(passWord) || !"123456".equals(passWord)) {
-			map.put("result", 0);
-			return map;
-		}
-		map.put("result", 1);
 		return map;
 	}
 }
