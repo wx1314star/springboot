@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wx.dao.TextMapper">
+	<resultMap id="BaseResultMap" type="com.wx.entity.Text">
+		<!-- WARNING - @mbg.generated -->
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="line_name" jdbcType="VARCHAR"
+			property="lineName" />
+		<result column="branch_line_name" jdbcType="VARCHAR"
+			property="branchLineName" />
+		<result column="project_name" jdbcType="VARCHAR"
+			property="projectName" />
+		<result column="work_content" jdbcType="VARCHAR"
+			property="workContent" />
+		<result column="task_source" jdbcType="VARCHAR"
+			property="taskSource" />
+		<result column="planning_nature" jdbcType="VARCHAR"
+			property="planningNature" />
+		<result column="work_type" jdbcType="VARCHAR"
+			property="workType" />
+		<result column="major" jdbcType="VARCHAR" property="major" />
+		<result column="working_group" jdbcType="VARCHAR"
+			property="workingGroup" />
+		<result column="working_place" jdbcType="VARCHAR"
+			property="workingPlace" />
+		<result column="planned_blackout_time" jdbcType="TIMESTAMP"
+			property="plannedBlackoutTime" />
+		<result column="planned_comm_time" jdbcType="TIMESTAMP"
+			property="plannedCommTime" />
+		<result column="planned_comp_time" jdbcType="TIMESTAMP"
+			property="plannedCompTime" />
+		<result column="planned_reply" jdbcType="TIMESTAMP"
+			property="plannedReply" />
+		<result column="operation_mode" jdbcType="VARCHAR"
+			property="operationMode" />
+		<result column="patrol_category" jdbcType="VARCHAR"
+			property="patrolCategory" />
+		<result column="inspection_category" jdbcType="VARCHAR"
+			property="inspectionCategory" />
+		<result column="voltage_grade" jdbcType="VARCHAR"
+			property="voltageGrade" />
+		<result column="ac_stop_equipment" jdbcType="VARCHAR"
+			property="acStopEquipment" />
+		<result column="scope_of_influence" jdbcType="VARCHAR"
+			property="scopeOfInfluence" />
+		<result column="influence_load" jdbcType="DECIMAL"
+			property="influenceLoad" />
+		<result column="influence_users" jdbcType="INTEGER"
+			property="influenceUsers" />
+		<result column="influence_variables" jdbcType="INTEGER"
+			property="influenceVariables" />
+		<result column="important_user" jdbcType="VARCHAR"
+			property="importantUser" />
+		<result column="duration_time" jdbcType="DECIMAL"
+			property="durationTime" />
+		<result column="transfer_power_supply" jdbcType="VARCHAR"
+			property="transferPowerSupply" />
+		<result column="responsible_unit" jdbcType="VARCHAR"
+			property="responsibleUnit" />
+		<result column="operation_unit" jdbcType="VARCHAR"
+			property="operationUnit" />
+		<result column="risk_level" jdbcType="VARCHAR"
+			property="riskLevel" />
+		<result column="control_level" jdbcType="VARCHAR"
+			property="controlLevel" />
+		<result column="control_mode" jdbcType="VARCHAR"
+			property="controlMode" />
+		<result column="acceptance_level" jdbcType="VARCHAR"
+			property="acceptanceLevel" />
+		<result column="construction_plan" jdbcType="TINYINT"
+			property="constructionPlan" />
+		<result column="work_instruction" jdbcType="TINYINT"
+			property="workInstruction" />
+		<result column="work_ticket" jdbcType="TINYINT"
+			property="workTicket" />
+		<result column="operation_ticket" jdbcType="TINYINT"
+			property="operationTicket" />
+		<result column="record_form" jdbcType="TINYINT"
+			property="recordForm" />
+		<result column="remarks" jdbcType="VARCHAR" property="remarks" />
+	</resultMap>
+
+
+	<insert id="add" parameterType="com.wx.entity.Text">
+		INSERT INTO text (line_name,
+		branch_line_name,project_name,work_content,task_source,planning_nature,work_type,major,working_group,working_place,planned_blackout_time,planned_comm_time,planned_comp_time,planned_reply,operation_mode,patrol_category,inspection_category,voltage_grade,ac_stop_equipment,scope_of_influence,influence_load,influence_users,influence_variables,important_user,duration_time,transfer_power_supply,responsible_unit,operation_unit,risk_level,control_level,control_mode,acceptance_level,construction_plan,work_instruction,work_ticket,operation_ticket,record_form,remarks)
+		VALUES (#{line_name},
+		#{branch_line_name},#{project_name},#{work_content},#{task_source},
+		#{planning_nature},#{work_type},#{major},#{working_group},
+		#{working_place},#{planned_blackout_time},#{planned_comm_time},
+		#{planned_comp_time},#{planned_reply},#{operation_mode},
+		#{patrol_category},#{inspection_category},#{voltage_grade},
+		#{ac_stop_equipment},#{scope_of_influence},#{influence_load},
+		#{influence_users},#{influence_variables},#{important_user},
+		#{duration_time},#{transfer_power_supply},#{responsible_unit},
+		#{operation_unit},#{risk_level},#{control_level},#{control_mode},
+		#{acceptance_level},#{construction_plan},#{work_instruction},
+		#{work_ticket},#{operation_ticket},#{record_form},#{remarks})
+	</insert>
+</mapper>
