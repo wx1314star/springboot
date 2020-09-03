@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+    <!-- 配置连接相关的参数
+        default: 在多个环境中默认使用哪个环境
+     -->
+    <environments default="dev">
+        <!-- 测试环境 -->
+        <environment id="dev">
+            <!-- 事务管理 type:指定事务管理的方式  JDBC-->
+            <transactionManager type="JDBC" />
+            <!-- 数据源 连接相关  type: 是不是用连接池形式   POOLED(使用连接池)  UNPOOL(不用连接池) -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://175.24.125.186:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 注册mapper配置文件 -->
+
+</configuration>

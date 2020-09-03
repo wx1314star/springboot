@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="outside">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/asm-3.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/cglib-2.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/javassist-3.17.1-GA.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/log4j-api-2.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/log4j-core-2.0.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/mybatis-3.2.8.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/slf4j-api-1.7.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/slf4j-log4j12-1.7.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/资料/mybatis/资料/lib/mysql-connector-java-8.0.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
