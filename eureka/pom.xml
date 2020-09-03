@@ -65,6 +65,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>1.5.9.RELEASE</version>
         </dependency>
+
         <!--认证-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
