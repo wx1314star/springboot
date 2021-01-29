@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+</head>
+<body>
+<div id="app">
+    <router-link to="/login?id=21&name=zhangsan">我要登录</router-link>
+    <router-link to="/register/21/小明">我要注册</router-link>
+    <router-view></router-view>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script src="../../static/js/vue-router.js"></script>
+<script>
+
+    //声明组件模板
+    const login = {
+        template: '<h1>用户登录{{this.$route.query.id}}{{this.$route.query.name}}</h1>',
+        data() {
+            return {}
+        },
+        methods: {},
+        created() {
+            console.log("=========>" + this.$route.query.id + "=========>" + this.$route.query.name);
+        }
+    };
+
+    const register = {
+        template: '<h1>用户注册{{this.$route.params.name}}</h1>',
+        created() {
+            console.log("注册组件中id:" + this.$route.params.id + this.$route.params.name);
+        }
+    };
+
+    //创建路由对象
+    const router = new VueRouter({
+        routes: [
+            {path: '/', redirect: '/login'},
+            {path: '/login', component: login},
+            {path: '/register/:id/:name', component: register},
+        ]
+    });
+
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router
+    });
+</script>
+</html>

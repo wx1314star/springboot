@@ -7,22 +7,22 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author wx
- *
- *         Dec 3, 2018
+ * <p>
+ * Dec 3, 2018
  */
 @Service
 public interface IService<T> {
-	T selectByKey(Object key);
+    T selectByKey(Object key);
 
-	int save(T entity);
+    int save(T entity);
 
-	int delete(Object key);
+    int delete(Object key);
 
-	int updateAll(T entity);
+    int updateAll(T entity);
 
-	int updateNotNull(T entity);
+    int updateNotNull(T entity);
 
-	List<T> selectByExample(Object example);
+    List<T> selectByExample(Object example);
 
-	// TODO 其他...
+    // TODO 其他...
 }

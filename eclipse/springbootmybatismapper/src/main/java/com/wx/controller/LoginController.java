@@ -17,30 +17,30 @@ import java.util.Map;
 @Controller
 
 public class LoginController extends AbstractController {
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@RequestMapping("/toLogin")
-	public String toLogin(Model model) {
-		model.addAttribute("ctx", getContextPath() + "/");
-		return "login";
-	}
+    @RequestMapping("/toLogin")
+    public String toLogin(Model model) {
+        model.addAttribute("ctx", getContextPath() + "/");
+        return "login";
+    }
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	@ResponseBody
-	public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("ctx", request.getContextPath());
-		Map<String, Object> map = new HashMap<String, Object>();
-		String userName = request.getParameter("userName");
-		String password = request.getParameter("password");
-		if (!userName.equals("") && password != "") {
-			User user = new User();
-			user.setUsername(userName);
-			user.setPassword(password);
-			request.getSession().setAttribute("user", user);
-			map.put("result", "1");
-		} else {
-			map.put("result", "0");
-		}
-		return map;
-	}
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("ctx", request.getContextPath());
+        Map<String, Object> map = new HashMap<String, Object>();
+        String userName = request.getParameter("userName");
+        String password = request.getParameter("password");
+        if (!userName.equals("") && password != "") {
+            User user = new User();
+            user.setUsername(userName);
+            user.setPassword(password);
+            request.getSession().setAttribute("user", user);
+            map.put("result", "1");
+        } else {
+            map.put("result", "0");
+        }
+        return map;
+    }
 }

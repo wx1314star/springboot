@@ -17,28 +17,28 @@ import com.example.demo.domain.User;
 
 /**
  * 登录控制器
- * 
- * @author wx
  *
- *         Dec 1, 2018
+ * @author wx
+ * <p>
+ * Dec 1, 2018
  */
 @Controller
 public class LoginController {
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	@ResponseBody
-	public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) {
-		Map<String, Object> map = new HashMap<String, Object>();
-		String userName = request.getParameter("userName");
-		String password = request.getParameter("passWord");
-		if (!userName.equals("") && password != "") {
-			User user = new User(userName, password);
-			request.getSession().setAttribute("user", user);
-			map.put("result", "1");
-		} else {
-			map.put("result", "0");
-		}
-		return map;
-	}
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        String userName = request.getParameter("userName");
+        String password = request.getParameter("passWord");
+        if (!userName.equals("") && password != "") {
+            User user = new User(userName, password);
+            request.getSession().setAttribute("user", user);
+            map.put("result", "1");
+        } else {
+            map.put("result", "0");
+        }
+        return map;
+    }
 }

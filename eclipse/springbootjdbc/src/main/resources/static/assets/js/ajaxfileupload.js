@@ -1,4 +1,3 @@
-
 jQuery.extend({
     createUploadIframe: function (id, uri) {
         //create frame
@@ -8,8 +7,7 @@ jQuery.extend({
             if (typeof uri == 'boolean') {
                 iframeHtml += ' src="' + 'javascript:false' + '"';
 
-            }
-            else if (typeof uri == 'string') {
+            } else if (typeof uri == 'string') {
                 iframeHtml += ' src="' + uri + '"';
 
             }
@@ -38,7 +36,6 @@ jQuery.extend({
         jQuery(oldElement).attr('id', fileId);
         jQuery(oldElement).before(newElement);
         jQuery(oldElement).appendTo(form);
-
 
 
         //set attributes
@@ -109,7 +106,7 @@ jQuery.extend({
                     jQuery.event.trigger("ajaxComplete", [xml, s]);
 
                 // Handle the global AJAX counter
-                if (s.global && ! --jQuery.active)
+                if (s.global && !--jQuery.active)
                     jQuery.event.trigger("ajaxStop");
 
                 // Process result
@@ -148,8 +145,7 @@ jQuery.extend({
             jQuery(form).attr('target', frameId);
             if (form.encoding) {
                 jQuery(form).attr('encoding', 'multipart/form-data');
-            }
-            else {
+            } else {
                 jQuery(form).attr('enctype', 'multipart/form-data');
             }
             jQuery(form).submit();
@@ -159,7 +155,10 @@ jQuery.extend({
         }
 
         jQuery('#' + frameId).load(uploadCallback);
-        return { abort: function () { } };
+        return {
+            abort: function () {
+            }
+        };
 
     },
 

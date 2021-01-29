@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>使用vue开发简单页面</title>
+</head>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<body>
+<div id="app">
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-10 col-md-offset-1">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" :class="showAtice=='home'?'active':''"><a href="#/home"
+                                                                                      @click="changeActive('home')">主页</a>
+                    </li>
+                    <li role="presentation" :class="showAtice=='user'?'active':''"><a href="#/user"
+                                                                                      @click="changeActive('user')">用户管理</a>
+                    </li>
+                    <li role="presentation" :class="showAtice=='stu'?'active':''"><a href="#/stu"
+                                                                                     @click="changeActive('stu')">学生管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <!--显示路由组件内容-->
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
+
+</div>
+<template id="home">
+    <div>
+        <div class="jumbotron" style="margin-top: 100px;">
+            <h1>Hello, world!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+                content or information.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+</template>
+<template id="userManager">
+    <div>
+        <table class="table table-striped" style="margin-top: 100px;">
+            <tr>
+                <th>id</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>生日</th>
+                <th>操作</th>
+            </tr>
+            <tr v-for="user in users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.bir}}</td>
+                <td><a href="#" class="btn btn-default">添加</a>
+                    <a href="#" class="btn btn-danger">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</template>
+<template id="stuManager">
+    <div>
+        <table class="table table-striped" style="margin-top: 100px;">
+            <tr>
+                <th>id</th>
+                <th>学生姓名</th>
+                <th>学生学历</th>
+                <th>学生邮箱</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>本科</td>
+                <td>22</td>
+                <td>123@qq.com</td>
+                <td><a href="#" class="btn btn-default">添加</a>
+                    <a href="#" class="btn btn-danger">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</template>
+</body>
+<!--引入vue开发版本-->
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    //1.主页组件配置对象
+    const home = {
+        template: '#home'
+    }
+    //2.用户管理组件配置对象
+    const userManager = {
+        template: '#userManager',
+        data() {
+            return {
+                users: [],
+            }
+        },
+        methods: {
+            findAll() {
+                let _this = this;
+                axios.get('http://localhost:8080/user/findAll')
+                    .then(res => {
+                        console.log(res.data);
+                        _this.users = res.data;
+                    }).catch(err => {
+                    console.log(err);
+                });
+            }
+        },
+        created() {
+            this.findAll();
+        }
+    }
+    //3.学生管理组件配置对象
+    const stuManger = {
+        template: '#stuManager'
+    }
+
+    //使用路由
+    const router = new VueRouter({
+        routes: [
+            {path: '/', redirect: '/home'},
+            {path: '/home', component: home},
+            {path: '/user', component: userManager},
+            {path: '/stu', component: stuManger},
+        ]
+    });
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            showAtice: 'home',
+        },
+        methods: {
+            changeActive(value) {
+                this.showAtice = value;
+            }
+        },
+        router
+    });
+</script>
+</html>

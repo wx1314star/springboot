@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>prop</title>
+</head>
+<body>
+<div id="app">
+    <!--使用组件传递静态数据，可以有多个-->
+    <login name="小陈" age="23"></login>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script>
+    //声明一个组件配置对象
+    let login = {
+        template: '<div><h1>欢迎：{{name}},年龄是：{{age}}</h1></div>',
+        props: ['name', 'age']
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        components: {
+            //注册组件
+            login
+        }
+    });
+</script>
+</html>

@@ -20,7 +20,7 @@ public class Book {
                 '}';
     }
 
-    public static void main(String[] args)throws Exception{
+    public static void main(String[] args) throws Exception {
         Class<?> cls = Class.forName("one.Book");
         Constructor<?> constructor = cls.getConstructor(String.class, String.class);
         Object obj = constructor.newInstance("1", "Java从入门到入坟");

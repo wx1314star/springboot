@@ -19,7 +19,7 @@
  home page: http://flexpaper.devaldi.com
  */
 
-$(function() {
+$(function () {
     /**
      * Handles the event of external links getting clicked in the document.
      *
@@ -27,8 +27,8 @@ $(function() {
      *
      * @param String link
      */
-    jQuery('#documentViewer').bind('onExternalLinkClicked',function(e,link){
-        window.open(link,'_flexpaper_exturl');
+    jQuery('#documentViewer').bind('onExternalLinkClicked', function (e, link) {
+        window.open(link, '_flexpaper_exturl');
     });
 
     /**
@@ -39,7 +39,7 @@ $(function() {
      * @param int loaded
      * @param int total
      */
-    jQuery('#documentViewer').bind('onProgress',function(e,loadedBytes,totalBytes){
+    jQuery('#documentViewer').bind('onProgress', function (e, loadedBytes, totalBytes) {
 
     });
 
@@ -47,7 +47,7 @@ $(function() {
      * Handles the event of a document is in progress of loading
      *
      */
-    jQuery('#documentViewer').bind('onDocumentLoading',function(e){
+    jQuery('#documentViewer').bind('onDocumentLoading', function (e) {
 
     });
 
@@ -55,7 +55,7 @@ $(function() {
      * Handles the event of a document is in progress of loading
      *
      */
-    jQuery('#documentViewer').bind('onPageLoading',function(e,pageNumber){
+    jQuery('#documentViewer').bind('onPageLoading', function (e, pageNumber) {
 
     });
 
@@ -66,21 +66,25 @@ $(function() {
      *
      * @param int pagenum
      */
-    jQuery('#documentViewer').bind('onCurrentPageChanged',function(e,pagenum){
+    jQuery('#documentViewer').bind('onCurrentPageChanged', function (e, pagenum) {
 
         // if GANumber is supplied then lets track this as a Google Analytics event.
-        if(jQuery(this).data('TrackingNumber')){
-            var _gaq = window._gaq || [];window._gaq=_gaq;
+        if (jQuery(this).data('TrackingNumber')) {
+            var _gaq = window._gaq || [];
+            window._gaq = _gaq;
             var trackingDoc = jQuery(this).data('TrackingDocument');
-            var pdfFileName = trackingDoc.substr(0,trackingDoc.indexOf(".pdf")+4);
+            var pdfFileName = trackingDoc.substr(0, trackingDoc.indexOf(".pdf") + 4);
 
             _gaq.push(['_setAccount', jQuery(this).data('TrackingNumber')]);
             _gaq.push(['_trackEvent', 'PDF Documents', 'Page View', pdfFileName + ' - page ' + pagenum]);
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
             })();
         }
     });
@@ -92,7 +96,7 @@ $(function() {
      *
      * @param int totalPages
      */
-    jQuery('#documentViewer').bind('onDocumentLoaded',function(e,totalPages){
+    jQuery('#documentViewer').bind('onDocumentLoaded', function (e, totalPages) {
 
     });
 
@@ -103,7 +107,7 @@ $(function() {
      *
      * @param int pageNumber
      */
-    jQuery('#documentViewer').bind('onPageLoaded',function(e,pageNumber){
+    jQuery('#documentViewer').bind('onPageLoaded', function (e, pageNumber) {
 
     });
 
@@ -114,7 +118,7 @@ $(function() {
      *
      * @param int pageNumber
      */
-    jQuery('#documentViewer').bind('onErrorLoadingPage',function(e,pageNumber){
+    jQuery('#documentViewer').bind('onErrorLoadingPage', function (e, pageNumber) {
 
     });
 
@@ -125,7 +129,7 @@ $(function() {
      *
      * @param String errorMessage
      */
-    jQuery('#documentViewer').bind('onDocumentLoadedError',function(e,errMessage){
+    jQuery('#documentViewer').bind('onDocumentLoadedError', function (e, errMessage) {
 
     });
 
@@ -135,7 +139,7 @@ $(function() {
      * @example onDocumentPrinted();
      *
      */
-    jQuery('#documentViewer').bind('onDocumentPrinted',function(e){
+    jQuery('#documentViewer').bind('onDocumentPrinted', function (e) {
 
     });
 });

@@ -36,8 +36,8 @@ public class TestOne {
 //        System.out.println(c7);
 //        System.out.println(c8);
 
-        int[] a=new int[10];
-        int[] b=new int[100];
+        int[] a = new int[10];
+        int[] b = new int[100];
         System.out.println(a.getClass().hashCode());
         System.out.println(b.getClass().hashCode());
     }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- 
+	mapper 用来管理DAO接口
+	namespace: 当前mapper配置文件管理的是哪个DAO接口(包.接口名)
+
+ -->
+<mapper namespace="dao.UserDao">
+
+    <insert id="insert" parameterType="entity.User">
+        insert into t_user(`name`,`age`,`bir`) values(#{name},#{age},#{bir})
+    </insert>
+</mapper>

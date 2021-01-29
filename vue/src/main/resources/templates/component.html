@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>compent</title>
+</head>
+<body>
+<div id="app">
+    <!--使用全局组件-->
+    <login></login>
+<!--    <login-te></login-te>-->
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../static/js/vue.js"></script>
+<script>
+    /*全局组件注册
+    * 1.参数1：组件名称
+    * 2.参数2：组件配置对象
+    * template: 用来书写组件的html代码
+    * 注意：在template中必须存在一个容器
+    *
+    */
+    Vue.component('login', {
+        template: '<div><h1>用户登录</h1></div>'
+    });
+    // Vue.component('loginTe', {
+    //     template: '<div><h1>用户登录二</h1></div>'
+    // });
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {}
+    });
+</script>
+</html>

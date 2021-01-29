@@ -6,13 +6,13 @@ import com.example.demo.domain.LearnResource;
 import com.example.demo.tools.Page;
 
 public interface LearnDao {
-	int add(LearnResource learnResource);
+    int add(LearnResource learnResource);
 
-	int update(LearnResource learnResource);
+    int update(LearnResource learnResource);
 
-	int deleteByIds(String ids);
+    int deleteByIds(String ids);
 
-	LearnResource queryLearnResouceById(Long id);
+    LearnResource queryLearnResouceById(Long id);
 
-	Page queryLearnResourceList(Map<String, Object> params);
+    Page queryLearnResourceList(Map<String, Object> params);
 }

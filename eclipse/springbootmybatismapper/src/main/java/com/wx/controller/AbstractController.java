@@ -8,18 +8,18 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Controller公共组件
- * 
- * @author wx
  *
- *         Dec 3, 2018
+ * @author wx
+ * <p>
+ * Dec 3, 2018
  */
 public abstract class AbstractController {
-	protected Logger logger = LoggerFactory.getLogger(getClass());
+    protected Logger logger = LoggerFactory.getLogger(getClass());
 
-	@Autowired
-	private HttpServletRequest request;
+    @Autowired
+    private HttpServletRequest request;
 
-	protected String getContextPath() {
-		return request.getContextPath();
-	}
+    protected String getContextPath() {
+        return request.getContextPath();
+    }
 }

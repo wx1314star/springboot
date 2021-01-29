@@ -5,7 +5,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://175.24.125.186:3306/mybatis</jdbc-url>
+      <jdbc-url>jdbc:mysql://175.24.125.186:3306/mybatis?useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
     </data-source>
   </component>
 </project>

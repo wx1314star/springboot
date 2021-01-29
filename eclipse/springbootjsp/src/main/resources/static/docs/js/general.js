@@ -1,5 +1,5 @@
-jQuery(document).ready(function() {
- 	var $ = jQuery;
+jQuery(document).ready(function () {
+    var $ = jQuery;
     var $window = $(window);
     var $body = $(document.body);
 
@@ -9,14 +9,14 @@ jQuery(document).ready(function() {
     $(".example:not(:has(.example-item))").addClass('no-item');
 
     // Remove Attributes 'hideFocus' and 'style' added in Kit
-	$(".example-code a, .example-code input, .example-code textarea").removeAttr("hideFocus style");
+    $(".example-code a, .example-code input, .example-code textarea").removeAttr("hideFocus style");
 
     // ScrollSpy
     $body.scrollspy({
         target: '.sidebar-demo',
         offset: 100
     });
-    $window.on('load', function() {
+    $window.on('load', function () {
         setTimeout(function () {
             $body.scrollspy('refresh')
         }, 1000);

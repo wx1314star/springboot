@@ -13,13 +13,13 @@ public class Book {
         this.title = title;
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         String filedName = "title";
-        Class<?> cls=Class.forName("three.Book");
+        Class<?> cls = Class.forName("three.Book");
         Object obj = cls.getDeclaredConstructor().newInstance();
-        Method setT=cls.getMethod("set"+convert(filedName),String.class);
-        Method getT=cls.getMethod("get"+convert(filedName));
-        setT.invoke(obj,"颈椎病康复指南");
+        Method setT = cls.getMethod("set" + convert(filedName), String.class);
+        Method getT = cls.getMethod("get" + convert(filedName));
+        setT.invoke(obj, "颈椎病康复指南");
         System.out.println(getT.invoke(obj));
     }
 

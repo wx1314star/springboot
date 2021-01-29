@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="outside" />
           <element id="library" level="project" name="hamcrest-core-1.3" />
+          <element id="library" level="application" name="lib" />
         </element>
       </element>
     </root>

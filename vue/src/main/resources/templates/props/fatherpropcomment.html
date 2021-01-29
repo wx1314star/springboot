@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+</head>
+<body>
+<div id="app">
+    <!--使用组件-->
+    <login :name="username" @aaa="findAll"></login>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script>
+    //声明组件
+    const login = {
+        template: '<div><h1>华信智原 {{uname}}</h1><input type="button" value="点我" @click="change"/></div>',
+        data() {
+            return {
+                uname: this.name
+            }
+        },
+        props: ['name'],
+        methods: {
+            change() {
+                //alert("login中组件函数执行");
+                
+                //调用vue中实例的函数
+                this.$emit('aaa');
+            }
+        }
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            username: "小陈"
+        },
+        methods: {
+            findAll() {
+                alert("我是vue实例中定义的函数");
+            }
+        },
+        components: {
+            login
+        }
+    });
+</script>
+</html>

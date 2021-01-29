@@ -10,7 +10,7 @@ import com.wx.util.MyMapper;
 
 @Mapper
 public interface TextMapper extends MyMapper<Text> {
-	int add(Text text);
+    int add(Text text);
 
 //	int update(Text text);
 //

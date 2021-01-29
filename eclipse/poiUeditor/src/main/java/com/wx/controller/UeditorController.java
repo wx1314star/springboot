@@ -18,16 +18,16 @@ import com.wx.util.PublicMsg;
 @Controller
 public class UeditorController {
 
-	@RequestMapping("/index")
-	public String index() {
-		return "index/index";
-	}
+    @RequestMapping("/index")
+    public String index() {
+        return "index/index";
+    }
 
-	@RequestMapping(value = "/ueditor")
-	@ResponseBody
-	public String ueditor(HttpServletRequest request, HttpServletResponse response) {
-		return config(request, response);
-	}
+    @RequestMapping(value = "/ueditor")
+    @ResponseBody
+    public String ueditor(HttpServletRequest request, HttpServletResponse response) {
+        return config(request, response);
+    }
 //
 //	@RequestMapping(value = "/imgUpload")
 //	@ResponseBody
@@ -36,20 +36,20 @@ public class UeditorController {
 //		return ueditor;
 //	}
 
-	@RequestMapping(value = "/config")
-	public String config(HttpServletRequest request, HttpServletResponse response) {
-		response.setContentType("application/json");
-		String rootPath = request.getSession().getServletContext().getRealPath("/");
-		String exec = null;
-		try {
-			exec = new ActionEnter(request, rootPath).exec();
+    @RequestMapping(value = "/config")
+    public String config(HttpServletRequest request, HttpServletResponse response) {
+        response.setContentType("application/json");
+        String rootPath = request.getSession().getServletContext().getRealPath("/");
+        String exec = null;
+        try {
+            exec = new ActionEnter(request, rootPath).exec();
 //			PrintWriter writer = response.getWriter();
 //			writer.write(exec);
 //			writer.flush();
 //			writer.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return exec;
-	}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return exec;
+    }
 }

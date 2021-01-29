@@ -7,13 +7,12 @@ import com.wx.model.LearnQueryLearnListReq;
 import com.wx.util.Page;
 
 /**
- * 
  * @author wx
- *
- *         Dec 3, 2018
+ * <p>
+ * Dec 3, 2018
  */
 public interface LearnService extends IService<LearnResource> {
-	public List<LearnResource> queryLearnResouceList(Page<LearnQueryLearnListReq> page);
+    public List<LearnResource> queryLearnResouceList(Page<LearnQueryLearnListReq> page);
 
-	public void deleteBatch(Long[] ids);
+    public void deleteBatch(Long[] ids);
 }

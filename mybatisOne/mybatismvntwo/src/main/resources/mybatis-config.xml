@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+    <!-- 引入JDBC的properties -->
+    <properties resource="jdbc.properties"/>
+
+    <!-- 给实体类起别名 -->
+    <typeAliases>
+        <!--自动扫描实体类包-->
+        <package name="entity"/>
+        <!--
+       type 给那个类起别名
+       alias 别名
+        -->
+        <!--        <typeAlias type="entity.Emp" alias="Emp" />-->
+    </typeAliases>
+    <!-- 配置连接相关的参数
+        default: 在多个环境中默认使用哪个环境
+     -->
+    <environments default="dev">
+        <!-- 测试环境 -->
+        <environment id="dev">
+            <!-- 事务管理 type:指定事务管理的方式  JDBC-->
+            <transactionManager type="JDBC"/>
+            <!-- 数据源 连接相关  type: 是不是用连接池形式   POOLED(使用连接池)  UNPOOL(不用连接池) -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 注册mapper配置文件 -->
+    <mappers>
+        <!--自动扫描dao包-->
+        <!--<package name="dao"/>-->
+        <mapper resource="EmpDaoMapper.xml"/>
+        <mapper resource="UserDaoMapper.xml"/>
+    </mappers>
+</configuration>

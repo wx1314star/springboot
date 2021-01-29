@@ -3,218 +3,221 @@
 <!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta name="author" content="ThemeFuse">
-<meta name="keywords" content="">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vanilla Cream | Documentation</title>
+    <meta charset="utf-8">
+    <meta name="author" content="ThemeFuse">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vanilla Cream | Documentation</title>
 
-<!-- main JS libs -->
-<script src="../vanilla-cream-css/js/libs/modernizr.min.js"></script>
-<script src="../vanilla-cream-css/js/libs/jquery-1.10.0.js"></script>
-<script src="../vanilla-cream-css/js/libs/jquery-ui.min.js"></script>
-<script src="../vanilla-cream-css/js/libs/bootstrap.min.js"></script>
+    <!-- main JS libs -->
+    <script src="../vanilla-cream-css/js/libs/modernizr.min.js"></script>
+    <script src="../vanilla-cream-css/js/libs/jquery-1.10.0.js"></script>
+    <script src="../vanilla-cream-css/js/libs/jquery-ui.min.js"></script>
+    <script src="../vanilla-cream-css/js/libs/bootstrap.min.js"></script>
 
-<!-- Style CSS -->
-<link href="../vanilla-cream-css/css/bootstrap.css" media="screen" rel="stylesheet">
-<link href="../vanilla-cream-css/style.css" media="screen" rel="stylesheet">
-<link href="css/docs.css" media="screen" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="../vanilla-cream-css/css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href="../vanilla-cream-css/style.css" media="screen" rel="stylesheet">
+    <link href="css/docs.css" media="screen" rel="stylesheet">
 
-<!-- scripts -->
-<script src="../vanilla-cream-css/js/general.js"></script>
-<script src="js/general.js"></script>
+    <!-- scripts -->
+    <script src="../vanilla-cream-css/js/general.js"></script>
+    <script src="js/general.js"></script>
 
-<!-- datepicker -->
-<link href="../vanilla-cream-css/css/jquery-ui-1.8.20.custom.css" rel="stylesheet">
+    <!-- datepicker -->
+    <link href="../vanilla-cream-css/css/jquery-ui-1.8.20.custom.css" rel="stylesheet">
 
-<!-- custom input -->
-<script src="../vanilla-cream-css/js/jquery.customInput.js"></script>
-<script type="text/javascript" src="../vanilla-cream-css/js/custom.js"></script>
+    <!-- custom input -->
+    <script src="../vanilla-cream-css/js/jquery.customInput.js"></script>
+    <script type="text/javascript" src="../vanilla-cream-css/js/custom.js"></script>
 
-<!-- Placeholders -->
-<script type="text/javascript" src="../vanilla-cream-css/js/jquery.powerful-placeholder.min.js"></script>
+    <!-- Placeholders -->
+    <script type="text/javascript" src="../vanilla-cream-css/js/jquery.powerful-placeholder.min.js"></script>
 
-<!-- Multiselect -->
-<link rel="stylesheet" href="../vanilla-cream-css/css/chosen.css">
-<script src="../vanilla-cream-css/js/jquery.chosen.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('#contact_name').chosen({ width: "100%" });
-    });
-</script>
-    
-<!-- Scroll Bars -->
-<script src="../vanilla-cream-css/js/jquery.mousewheel.js"></script>
-<script src="../vanilla-cream-css/js/jquery.jscrollpane.min.js"></script>
-<script type="text/javascript">
-    jQuery(function()
-    {
-        jQuery('.scrollbar').jScrollPane({
-            verticalDragMaxHeight: 55,
-            verticalDragMinHeight:55
+    <!-- Multiselect -->
+    <link rel="stylesheet" href="../vanilla-cream-css/css/chosen.css">
+    <script src="../vanilla-cream-css/js/jquery.chosen.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#contact_name').chosen({width: "100%"});
         });
+    </script>
 
-        jQuery('.scrollbar.style2').jScrollPane({
-            verticalDragMaxHeight: 30,
-            verticalDragMinHeight:30
+    <!-- Scroll Bars -->
+    <script src="../vanilla-cream-css/js/jquery.mousewheel.js"></script>
+    <script src="../vanilla-cream-css/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.scrollbar').jScrollPane({
+                verticalDragMaxHeight: 55,
+                verticalDragMinHeight: 55
+            });
+
+            jQuery('.scrollbar.style2').jScrollPane({
+                verticalDragMaxHeight: 30,
+                verticalDragMinHeight: 30
+            });
+
+            jQuery('.scrollbar.style3').jScrollPane({
+                verticalDragMaxHeight: 14,
+                verticalDragMinHeight: 14
+            });
+
+            jQuery('.scrollbar.style4').jScrollPane({
+                verticalDragMaxHeight: 55,
+                verticalDragMinHeight: 55
+            });
         });
+    </script>
 
-        jQuery('.scrollbar.style3').jScrollPane({
-            verticalDragMaxHeight: 14,
-            verticalDragMinHeight:14
-        });
+    <!-- Progress Bars -->
+    <script src="../vanilla-cream-css/js/progressbar.js"></script>
 
-        jQuery('.scrollbar.style4').jScrollPane({
-            verticalDragMaxHeight: 55,
-            verticalDragMinHeight:55
-        });
-    });
-</script>
+    <!-- range sliders -->
+    <script src="../vanilla-cream-css/js/jquery.slider.bundle.js"></script>
+    <script src="../vanilla-cream-css/js/jquery.slider.js"></script>
+    <link rel="stylesheet" href="../vanilla-cream-css/css/jslider.css">
 
-<!-- Progress Bars -->
-<script src="../vanilla-cream-css/js/progressbar.js"></script>
+    <!-- Volume, Balance -->
+    <script type="text/javascript" src="../vanilla-cream-css/js/knobRot-0.2.2.js"></script>
 
-<!-- range sliders -->
-<script src="../vanilla-cream-css/js/jquery.slider.bundle.js"></script>
-<script src="../vanilla-cream-css/js/jquery.slider.js"></script>
-<link rel="stylesheet" href="../vanilla-cream-css/css/jslider.css">
+    <!-- Video Player -->
+    <link href="../vanilla-cream-css/css/video-js.css" rel="stylesheet">
+    <script src="../vanilla-cream-css/js/video.js"></script>
 
-<!-- Volume, Balance -->
-<script type="text/javascript" src="../vanilla-cream-css/js/knobRot-0.2.2.js"></script>
+    <!-- Audio Player -->
+    <link href="../vanilla-cream-css/css/jplayer.css" rel="stylesheet">
+    <script src="../vanilla-cream-css/js/jquery.jplayer.min.js"></script>
+    <script src="../vanilla-cream-css/js/jplayer.playlist.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
 
-<!-- Video Player -->
-<link href="../vanilla-cream-css/css/video-js.css" rel="stylesheet">
-<script src="../vanilla-cream-css/js/video.js"></script>
-
-<!-- Audio Player -->
-<link href="../vanilla-cream-css/css/jplayer.css" rel="stylesheet">
-<script src="../vanilla-cream-css/js/jquery.jplayer.min.js"></script>
-<script src="../vanilla-cream-css/js/jplayer.playlist.min.js"></script>
-<script type="text/javascript">
-    //<![CDATA[
-    $(document).ready(function(){
-
-        new jPlayerPlaylist({
-            jPlayer: "#jquery_jplayer_1",
-            cssSelectorAncestor: "#jp_container_1"
-        }, [
-            {
-                title:"<ul><li class='item-artist'>3 Doors Down&#160;&#8211;&#160;</li><li class='item-song'>Superman</li></ul>",
-                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
-            },
-            {
-                title:"<ul><li class='item-artist'>Daft Punk&#160;&#8211;&#160;</li><li class='item-song'>Get Lucky</li></ul>",
-                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
-            },
-            {
-                title:"<ul><li class='item-artist'>Justin Timberlake&#160;&#8211;&#160;</li><li class='item-song'>Mirrors</li></ul>",
-                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
-                oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-            }
-        ], {
-            swfPath: "js",
-            supplied: "oga, mp3",
-            wmode: "window",
-            smoothPlayBar: false,
-            keyEnabled: false
-        });
-    });
-    //]]>
-</script>
-
-<!-- Calendar -->
-<script src="../vanilla-cream-css/js/jquery-ui.multidatespicker.js"></script>
-
-<!-- Visual Text Editor -->
-<script src="../vanilla-cream-css/js/nicEdit.js"></script>
-
-<!-- Graph Builder -->
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../vanilla-cream-css/js/excanvas.min.js"></script><![endif]-->
-<script type="text/javascript" src="../vanilla-cream-css/js/jquery.flot.js"></script>
-<script type="text/javascript" src="../vanilla-cream-css/js/jquery.flot.resize.js"></script>
-<script type="text/javascript">
-    $(function() {
-        var graphwidth = $('.widget_graph .inner').width();
-        $('.widget_graph .graph').css('height', parseInt(graphwidth/1.7));
-        $(window).resize(function() {
-            graphwidth = $('.widget_graph .inner').width();
-            $('.widget_graph .graph').css('height', parseInt(graphwidth/1.7));
-        });
-
-        var d1 = [[0, 9], [1, 23], [1.8, 7], [2.2, 24], [2.8, 18], [4, 36]];
-        var graphholder = $("#graph");
-        var plot = $.plot(graphholder, [d1], {
-            colors: ["#669146", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"],
-            xaxis: {
-                min: null,
-                max: null
-            },
-            yaxis: {
-                autoscaleMargin: 0.02
-            },
-            series: {
-                lines: {
-                    show: true,
-                    lineWidth: 2,
-                    fill: true,
-                    fillColor: "rgba(188,176,150,0.3)"
+            new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            }, [
+                {
+                    title: "<ul><li class='item-artist'>3 Doors Down&#160;&#8211;&#160;</li><li class='item-song'>Superman</li></ul>",
+                    mp3: "http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
                 },
-                points: {
-                    show: true,
-                    radius: 4,
-                    lineWidth: 2,
-                    fillColor: "#f6f3ee"
+                {
+                    title: "<ul><li class='item-artist'>Daft Punk&#160;&#8211;&#160;</li><li class='item-song'>Get Lucky</li></ul>",
+                    mp3: "http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+                },
+                {
+                    title: "<ul><li class='item-artist'>Justin Timberlake&#160;&#8211;&#160;</li><li class='item-song'>Mirrors</li></ul>",
+                    mp3: "http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+                    oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
                 }
-            },
-            grid: {
-                hoverable: true,
-                clickable: true,
-                margin: 12,
-                color: "#a09d96",
-                borderColor: "#b7ab92"
-            }
+            ], {
+                swfPath: "js",
+                supplied: "oga, mp3",
+                wmode: "window",
+                smoothPlayBar: false,
+                keyEnabled: false
+            });
         });
+        //]]>
+    </script>
 
-        function showTooltip(x, y, contents) {
-            $("<div id='graph-tooltip'>" + contents + "</div>").css({top: y - 36, left: x - 19}).appendTo("body").fadeIn(200);
-        };
+    <!-- Calendar -->
+    <script src="../vanilla-cream-css/js/jquery-ui.multidatespicker.js"></script>
 
-        var previousPoint = null;
-        $("#graph").on("plothover", function (event, pos, item) {
+    <!-- Visual Text Editor -->
+    <script src="../vanilla-cream-css/js/nicEdit.js"></script>
 
-            if (item) {
-                if (previousPoint != item.dataIndex) {
+    <!-- Graph Builder -->
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../vanilla-cream-css/js/excanvas.min.js"></script><![endif]-->
+    <script type="text/javascript" src="../vanilla-cream-css/js/jquery.flot.js"></script>
+    <script type="text/javascript" src="../vanilla-cream-css/js/jquery.flot.resize.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var graphwidth = $('.widget_graph .inner').width();
+            $('.widget_graph .graph').css('height', parseInt(graphwidth / 1.7));
+            $(window).resize(function () {
+                graphwidth = $('.widget_graph .inner').width();
+                $('.widget_graph .graph').css('height', parseInt(graphwidth / 1.7));
+            });
 
-                    previousPoint = item.dataIndex;
+            var d1 = [[0, 9], [1, 23], [1.8, 7], [2.2, 24], [2.8, 18], [4, 36]];
+            var graphholder = $("#graph");
+            var plot = $.plot(graphholder, [d1], {
+                colors: ["#669146", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"],
+                xaxis: {
+                    min: null,
+                    max: null
+                },
+                yaxis: {
+                    autoscaleMargin: 0.02
+                },
+                series: {
+                    lines: {
+                        show: true,
+                        lineWidth: 2,
+                        fill: true,
+                        fillColor: "rgba(188,176,150,0.3)"
+                    },
+                    points: {
+                        show: true,
+                        radius: 4,
+                        lineWidth: 2,
+                        fillColor: "#f6f3ee"
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true,
+                    margin: 12,
+                    color: "#a09d96",
+                    borderColor: "#b7ab92"
+                }
+            });
 
-                    $("#graph-tooltip").remove();
-                    var x = item.datapoint[0].toFixed(2),
+            function showTooltip(x, y, contents) {
+                $("<div id='graph-tooltip'>" + contents + "</div>").css({
+                    top: y - 36,
+                    left: x - 19
+                }).appendTo("body").fadeIn(200);
+            };
+
+            var previousPoint = null;
+            $("#graph").on("plothover", function (event, pos, item) {
+
+                if (item) {
+                    if (previousPoint != item.dataIndex) {
+
+                        previousPoint = item.dataIndex;
+
+                        $("#graph-tooltip").remove();
+                        var x = item.datapoint[0].toFixed(2),
                             y = item.datapoint[1].toFixed(2);
 
-                    showTooltip(item.pageX, item.pageY, '$' + y*100);
+                        showTooltip(item.pageX, item.pageY, '$' + y * 100);
+                    }
+                } else {
+                    $("#graph-tooltip").remove();
+                    previousPoint = null;
                 }
-            } else {
-                $("#graph-tooltip").remove();
-                previousPoint = null;
-            }
+            });
         });
-    });
-</script>
+    </script>
 
-<!-- SyntaxHighlighter -->
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-<link href="css/prettify.css" rel="stylesheet">
+    <!-- SyntaxHighlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <link href="css/prettify.css" rel="stylesheet">
 
-<!--[if lt IE 9]><script src="../vanilla-cream-css/js/respond.min.js"></script><![endif]-->
-<!--[if gte IE 9]>
-<style type="text/css">
-    .gradient {filter: none !important;}
-</style>
-<![endif]-->
+    <!--[if lt IE 9]><script src="../vanilla-cream-css/js/respond.min.js"></script><![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {filter: none !important;}
+    </style>
+    <![endif]-->
 </head>
 
 <body>
@@ -227,7 +230,7 @@
                 <!-- row -->
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="logo"><img src="images/logo.png" alt="" /></div>
+                        <div class="logo"><img src="images/logo.png" alt=""/></div>
                     </div>
 
                     <div class="col-sm-9">
@@ -249,12 +252,12 @@
             <div class="col-sm-3">
                 <div class="sidebar-demo hidden-print" role="complementary" data-spy="affix" data-offset-top="200">
                     <ul class="nav">
-						<li><a href="#about">What is Vanilla Cream</a></li>
-						<li><a href="#what-included">What is included</a></li>
-						<li><a href="#browser">Browser support</a></li>
-						<li><a href="#getting-started">Getting Started</a></li>
-						<li><a href="#template">Basic Template</a></li>
-						<li><a href="#typography">Typography</a></li>
+                        <li><a href="#about">What is Vanilla Cream</a></li>
+                        <li><a href="#what-included">What is included</a></li>
+                        <li><a href="#browser">Browser support</a></li>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#template">Basic Template</a></li>
+                        <li><a href="#typography">Typography</a></li>
                         <li>
                             <a href="#buttons">Components</a>
                             <ul class="nav">
@@ -291,7 +294,7 @@
                                     <ul class="nav">
                                         <li><a href="#knobs-volume">Volume</a></li>
                                         <li><a href="#knobs-balance">Balance</a></li>
-                                      </ul>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#navigation">Navigation</a>
@@ -350,7 +353,11 @@
                         <h2 id="about">What is Vanilla Cream UI Kit</h2>
 
                         <div class="description">
-                            <p><a href="http://pixelkit.com/previews/light-ui-kit/" target="_blank">Vanilla Cream UI Kit</a> is a number of useful user interface components built on <a href="http://getbootstrap.com" target="_blank">Bootstrap 3</a> framework. We did not modify any line of Bootstrap, so you can safely use Vanilla Cream UI Kit in your ongoing project.</p>
+                            <p><a href="http://pixelkit.com/previews/light-ui-kit/" target="_blank">Vanilla Cream UI
+                                Kit</a> is a number of useful user interface components built on <a
+                                    href="http://getbootstrap.com" target="_blank">Bootstrap 3</a> framework. We did not
+                                modify any line of Bootstrap, so you can safely use Vanilla Cream UI Kit in your ongoing
+                                project.</p>
                         </div>
 
                     </div>
@@ -361,7 +368,8 @@
                         <h2 id="what-included">What is included</h2>
 
                         <div class="description">
-                            <p>Once purchased, unzip the compressed folder to see the directory structure of Vanilla Cream UI Kit. You'll see something like this:</p>
+                            <p>Once purchased, unzip the compressed folder to see the directory structure of Vanilla
+                                Cream UI Kit. You'll see something like this:</p>
                         </div>
                         <div class="example">
                             <div class="example-code">
@@ -395,25 +403,47 @@ vanilla-cream
                         </div>
                         <div class="description">
                             <dl class="clearfix">
-                                <dt class="parent">docs/</dt><dd>contains this documentation.</dd>
-                                <dt class="parent">vanilla-cream-css/</dt><dd>contains Vanilla Cream UI Kit in simple CSS format. Use it to easily start your project.</dd>
-                                <dt>css/</dt><dd>contains all the stylesheets for CSS version of the kit.</dd>
-                                <dt>fonts/</dt><dd>contains Bootstrap Glyphicons for CSS version of the kit.</dd>
-                                <dt>images/</dt><dd>contains all the images for CSS version of the kit.</dd>
-                                <dt>images/icons/</dt><dd>contains all the icons for CSS version of the kit.</dd>
-                                <dt>images/temp/</dt><dd>contains all the temporary images for CSS version of the kit.</dd>
-                                <dt>js/</dt><dd>contains all the JS files for CSS version of the kit.</dd>
+                                <dt class="parent">docs/</dt>
+                                <dd>contains this documentation.</dd>
+                                <dt class="parent">vanilla-cream-css/</dt>
+                                <dd>contains Vanilla Cream UI Kit in simple CSS format. Use it to easily start your
+                                    project.
+                                </dd>
+                                <dt>css/</dt>
+                                <dd>contains all the stylesheets for CSS version of the kit.</dd>
+                                <dt>fonts/</dt>
+                                <dd>contains Bootstrap Glyphicons for CSS version of the kit.</dd>
+                                <dt>images/</dt>
+                                <dd>contains all the images for CSS version of the kit.</dd>
+                                <dt>images/icons/</dt>
+                                <dd>contains all the icons for CSS version of the kit.</dd>
+                                <dt>images/temp/</dt>
+                                <dd>contains all the temporary images for CSS version of the kit.</dd>
+                                <dt>js/</dt>
+                                <dd>contains all the JS files for CSS version of the kit.</dd>
 
-                                <dt class="parent">vanilla-cream-less/</dt><dd>contains Vanilla Cream UI Kit in LESS format. Use it to modify this kit in your project.</dd>
-                                <dt>fonts/</dt><dd>contains Bootstrap Glyphicons for LESS version of the kit.</dd>
-                                <dt>images/</dt><dd>contains all the images for LESS version of the kit.</dd>
-                                <dt>images/icons/</dt><dd>contains all the icons for LESS version of the kit.</dd>
-                                <dt>images/temp/</dt><dd>contains all the temporary images for LESS version of the kit.</dd>
-                                <dt>js/</dt><dd>contains all the JS files for LESS version of the kit.</dd>
-                                <dt>less/</dt><dd>contains all the stylesheets for LESS version of the kit.</dd>
+                                <dt class="parent">vanilla-cream-less/</dt>
+                                <dd>contains Vanilla Cream UI Kit in LESS format. Use it to modify this kit in your
+                                    project.
+                                </dd>
+                                <dt>fonts/</dt>
+                                <dd>contains Bootstrap Glyphicons for LESS version of the kit.</dd>
+                                <dt>images/</dt>
+                                <dd>contains all the images for LESS version of the kit.</dd>
+                                <dt>images/icons/</dt>
+                                <dd>contains all the icons for LESS version of the kit.</dd>
+                                <dt>images/temp/</dt>
+                                <dd>contains all the temporary images for LESS version of the kit.</dd>
+                                <dt>js/</dt>
+                                <dd>contains all the JS files for LESS version of the kit.</dd>
+                                <dt>less/</dt>
+                                <dd>contains all the stylesheets for LESS version of the kit.</dd>
                             </dl>
 
-                            <p><em>Note:</em> The folders <code>vanilla-cream-css</code> and <code>vanilla-cream-less</code> is fully independent from each other, including all the images and JS files. You can use the version you prefer without pulling images or JS files from the other version of the kit.</p>
+                            <p><em>Note:</em> The folders <code>vanilla-cream-css</code> and
+                                <code>vanilla-cream-less</code> is fully independent from each other, including all the
+                                images and JS files. You can use the version you prefer without pulling images or JS
+                                files from the other version of the kit.</p>
                         </div>
                     </div>
                     <!--/ What's included -->
@@ -423,7 +453,11 @@ vanilla-cream
                         <h2 id="browser">Browser support</h2>
 
                         <div class="description">
-                            <p>Since <a href="http://pixelkit.com/previews/light-ui-kit/" target="_blank">Vanilla Cream UI Kit</a> is built on <a href="http://getbootstrap.com" target="_blank">Bootstrap 3</a> framework, it supports the same <a href="http://getbootstrap.com/getting-started/#browsers" target="_blank">browsers</a> as Bootstrap.</p>
+                            <p>Since <a href="http://pixelkit.com/previews/light-ui-kit/" target="_blank">Vanilla Cream
+                                UI Kit</a> is built on <a href="http://getbootstrap.com" target="_blank">Bootstrap 3</a>
+                                framework, it supports the same <a
+                                        href="http://getbootstrap.com/getting-started/#browsers" target="_blank">browsers</a>
+                                as Bootstrap.</p>
                         </div>
 
                     </div>
@@ -434,18 +468,31 @@ vanilla-cream
                         <h2 id="getting-started">Getting Started</h2>
 
                         <div class="description">
-                            <p>To start working with <a href="http://pixelkit.com/previews/light-ui-kit/" target="_blank">Vanilla Cream UI Kit</a> you can use a basic <code>template.html</code>, or take the completely functional pages included in this package. Since it is built on Bootstrap, you can also use it on your project with Bootstrap 3.
-                                <br />
-                                We provide you both CSS and LESS standalone versions which are completely identical in design and functions.
+                            <p>To start working with <a href="http://pixelkit.com/previews/light-ui-kit/"
+                                                        target="_blank">Vanilla Cream UI Kit</a> you can use a basic
+                                <code>template.html</code>, or take the completely functional pages included in this
+                                package. Since it is built on Bootstrap, you can also use it on your project with
+                                Bootstrap 3.
+                                <br/>
+                                We provide you both CSS and LESS standalone versions which are completely identical in
+                                design and functions.
                             </p>
                             <p>
-                                <em>CSS Version:</em> You can use CSS version by dropping contents of <code>vanilla-cream-css</code> folder to your project folder and including <code>style.css</code> file in your HTML page: <code>&lt;link href="style.css" media="screen" rel="stylesheet"></code>
+                                <em>CSS Version:</em> You can use CSS version by dropping contents of <code>vanilla-cream-css</code>
+                                folder to your project folder and including <code>style.css</code> file in your HTML
+                                page: <code>&lt;link href="style.css" media="screen" rel="stylesheet"></code>
                             </p>
                             <p>
-                                <em>LESS Version:</em> You can find it in <code>vanilla-cream-less</code> folder. Use LESS if you want to modify Vanilla Cream UI Kit. We built it Bootstrap way so you won't find big difference. Use <code>less/variables.less</code> to modify different styles, use <code>style.less</code> to remove needless components.
+                                <em>LESS Version:</em> You can find it in <code>vanilla-cream-less</code> folder. Use
+                                LESS if you want to modify Vanilla Cream UI Kit. We built it Bootstrap way so you won't
+                                find big difference. Use <code>less/variables.less</code> to modify different styles,
+                                use <code>style.less</code> to remove needless components.
                             </p>
                             <p>
-                                If you want to start from scratch, the best way is to use <a href="#template">our template</a> where all startup files are already included and ready to be used. You can find <code>template.html</code> file both for CSS and LESS version in their respective folders.
+                                If you want to start from scratch, the best way is to use <a href="#template">our
+                                template</a> where all startup files are already included and ready to be used. You can
+                                find <code>template.html</code> file both for CSS and LESS version in their respective
+                                folders.
                             </p>
                         </div>
 
@@ -457,7 +504,10 @@ vanilla-cream
                         <h2 id="template">Basic Template</h2>
 
                         <div class="description">
-                            <p>You can use a basic <a href="../vanilla-cream-css/template.html" target="_blank">HTML template</a> to write your code, or take completely functional pages included in this package. Basic template as well as completely functional pages are available both for CSS and LESS versions of the Vanilla Cream UI Kit.</p>
+                            <p>You can use a basic <a href="../vanilla-cream-css/template.html" target="_blank">HTML
+                                template</a> to write your code, or take completely functional pages included in this
+                                package. Basic template as well as completely functional pages are available both for
+                                CSS and LESS versions of the Vanilla Cream UI Kit.</p>
                         </div>
                         <div class="example">
                             <div class="example-code">
@@ -520,8 +570,14 @@ vanilla-cream
 
                         <div class="description">
                             <p>
-                                Vanilla Cream UI Kit uses free <a href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans" target="_blank">Open Sans</a> webfont available at the <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>. The global default font-size is 13px, with a font-weight of 400. This is applied to the <code>&lt;body></code> and all paragraphs. In addition, all <code>&lt;p></code> (paragraphs) receive a bottom margin of 16px.
-                                <br />
+                                Vanilla Cream UI Kit uses free <a
+                                    href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans"
+                                    target="_blank">Open Sans</a> webfont available at the <a
+                                    href="http://www.google.com/fonts" target="_blank">Google Fonts</a>. The global
+                                default font-size is 13px, with a font-weight of 400. This is applied to the <code>&lt;body></code>
+                                and all paragraphs. In addition, all <code>&lt;p></code> (paragraphs) receive a bottom
+                                margin of 16px.
+                                <br/>
                                 Also, all headings, <code>&lt;h1></code> through <code>&lt;h6></code> are available.
                             </p>
                             <h4>Example</h4>
@@ -534,8 +590,14 @@ vanilla-cream
                                 <h4>Example (h4)</h4>
                                 <h5>Example (h5)</h5>
                                 <h6>Example (h6)</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
+                                    Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                                    rhoncus ut eleifend nibh porttitor.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
+                                    Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                                    rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non
+                                    est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut
+                                    dapibus.</p>
                             </div>
                             <div class="example-code">
                                     <pre class="prettyprint">
@@ -674,12 +736,13 @@ vanilla-cream
                         <!-- Buttoned Input -->
                         <div class="description">
                             <h3 id="buttons-input">Buttoned Input</h3>
-                            <p>Wrap <code>input type="submit"</code> into <code>span</code> and use available button classes to create a styled Input.</p>
+                            <p>Wrap <code>input type="submit"</code> into <code>span</code> and use available button
+                                classes to create a styled Input.</p>
                             <h4>Example</h4>
                         </div>
                         <div class="example">
                             <div class="example-item example-buttons">
-                                <span class="btn btn-hover"><input type="submit" value="Submit" /></span>
+                                <span class="btn btn-hover"><input type="submit" value="Submit"/></span>
                             </div>
                             <div class="example-code">
                                 <pre class="prettyprint">
@@ -698,8 +761,9 @@ vanilla-cream
                         <div class="example">
                             <div class="example-item">
                                 <!-- Share Button -->
-                                <a class="shareButton gradient" href="#"><span class="shareIcon"><i></i></span><span class="shareText">Share</span><span class="shareCount gradient">3K</span></a>
-                                <!--/ Share Button -->    
+                                <a class="shareButton gradient" href="#"><span class="shareIcon"><i></i></span><span
+                                        class="shareText">Share</span><span class="shareCount gradient">3K</span></a>
+                                <!--/ Share Button -->
                             </div>
                             <div class="example-code">
                                 <pre class="prettyprint">
@@ -724,8 +788,10 @@ vanilla-cream
                                 <!-- List Selector -->
                                 <ul id="listSelector" class="listSelector gradient">
                                     <li class="list-multi"><a href="#"></a></li><!--
-                                --><li class="list-double selected"><a href="#"></a></li><!--
-                                --><li class="list-single"><a href="#"></a></li>
+                                -->
+                                    <li class="list-double selected"><a href="#"></a></li><!--
+                                -->
+                                    <li class="list-single"><a href="#"></a></li>
                                 </ul>
                                 <!--/ List Selector -->
                             </div>
@@ -754,9 +820,9 @@ vanilla-cream
                         <div class="example">
                             <div class="example-item example-ribbons">
                                 <div class="ribbon"><span>10 December 2012</span></div>
-                                <br />
+                                <br/>
                                 <div class="ribbon ribbon-green"><span>10 December 2012</span></div>
-                                <br />
+                                <br/>
                                 <div class="ribbon ribbon-brown"><span>10 December 2012</span></div>
                             </div>
                             <div class="example-code">
@@ -786,7 +852,7 @@ vanilla-cream
                                 <div class="badge badge-discount"></div>
                                 <div class="badge badge-fresh"></div>
                                 <div class="badge badge-sale"></div>
-                                <br />
+                                <br/>
                                 <div class="badge style2"></div>
                                 <div class="badge style2 badge-green"></div>
                                 <div class="badge style2 badge-brown"></div>
@@ -855,7 +921,8 @@ vanilla-cream
                             <div class="callout">
                                 <h5>Element specific usage</h5>
                                 <p>Attribute <code>name</code> required for <code>input</code> element.</p>
-                                <p>Styled Checkbox require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Styled Checkbox require next file to be included into <code>&lt;head></code> section
+                                    of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.customInput.js">&lt;/script>
                                 </pre>
@@ -865,9 +932,16 @@ vanilla-cream
                         <div class="example">
                             <div class="example-item example-checkbox">
                                 <div class="input_styled checklist">
-                                    <div class="rowCheckbox"><input name="signup" type="checkbox" checked id="signup" value="signup"><label for="signup">Simple Checkbox</label></div>
-                                    <div class="rowCheckbox checkbox-middle"><input name="signup2" type="checkbox" checked id="signup2" value="signup2"><label for="signup2">Switch</label></div>
-                                    <div class="rowCheckbox checkbox-large"><input name="signup3" type="checkbox" checked id="signup3" value="signup3"><label for="signup3">Large Switch</label></div>
+                                    <div class="rowCheckbox"><input name="signup" type="checkbox" checked id="signup"
+                                                                    value="signup"><label for="signup">Simple
+                                        Checkbox</label></div>
+                                    <div class="rowCheckbox checkbox-middle"><input name="signup2" type="checkbox"
+                                                                                    checked id="signup2"
+                                                                                    value="signup2"><label
+                                            for="signup2">Switch</label></div>
+                                    <div class="rowCheckbox checkbox-large"><input name="signup3" type="checkbox"
+                                                                                   checked id="signup3" value="signup3"><label
+                                            for="signup3">Large Switch</label></div>
                                 </div>
                             </div>
                             <div class="example-code">
@@ -900,7 +974,8 @@ vanilla-cream
                             <div class="callout">
                                 <h5>Element specific usage</h5>
                                 <p>Attribute <code>name</code> required for <code>input</code> element.</p>
-                                <p>Styled Radio Button require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Styled Radio Button require next file to be included into <code>&lt;head></code>
+                                    section of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.customInput.js">&lt;/script>
                                 </pre>
@@ -910,8 +985,12 @@ vanilla-cream
                         <div class="example">
                             <div class="example-item example-checkbox">
                                 <div class="input_styled inlinelist">
-                                    <div class="rowRadio"><input type="radio" name="survey" value="radio_v3" id="radio_v3" checked><label for="radio_v3">Checked</label></div>
-                                    <div class="rowRadio"><input type="radio" name="survey" value="radio_v4" id="radio_v4"><label for="radio_v4">Unchecked</label></div>
+                                    <div class="rowRadio"><input type="radio" name="survey" value="radio_v3"
+                                                                 id="radio_v3" checked><label
+                                            for="radio_v3">Checked</label></div>
+                                    <div class="rowRadio"><input type="radio" name="survey" value="radio_v4"
+                                                                 id="radio_v4"><label for="radio_v4">Unchecked</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="example-code">
@@ -937,7 +1016,8 @@ vanilla-cream
                             <p>All Text inputs are styled.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Text Inputs with <code>placeholders</code> require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Text Inputs with <code>placeholders</code> require next file to be included into
+                                    <code>&lt;head></code> section of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.powerful-placeholder.min.js">&lt;/script>
                                 </pre>
@@ -973,7 +1053,8 @@ vanilla-cream
                             <p>All Textareas are styled similar to Text inputs.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Textareas with <code>placeholders</code> require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Textareas with <code>placeholders</code> require next file to be included into <code>&lt;head></code>
+                                    section of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.powerful-placeholder.min.js">&lt;/script>
                                 </pre>
@@ -1006,7 +1087,8 @@ vanilla-cream
                             <p>Use any of the available classes to quickly create a styled Scroll Bar for your site.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Styled Scroll Bar require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Styled Scroll Bar require next files to be included into <code>&lt;head></code>
+                                    section of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.mousewheel.js">&lt;/script>
 &lt;script src="js/jquery.jscrollpane.min.js">&lt;/script>
@@ -1020,22 +1102,42 @@ vanilla-cream
                                     <!-- ScrollBars -->
                                     <div class="scrollbar">
                                         <div class="inner">
-                                            <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                                            <p>These examples show very basic functionality and exist so that I can test
+                                                that any changes to jScrollPane work cross browser and don't cause any
+                                                new problems. Note that these examples aren't meant to look pretty, they
+                                                merely highlight different bits of functionaity which are available. If
+                                                you want examples of jScrollPane looking good then check out the
+                                                themes.</p>
                                         </div>
                                     </div>
                                     <div class="scrollbar style2">
                                         <div class="inner">
-                                            <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                                            <p>These examples show very basic functionality and exist so that I can test
+                                                that any changes to jScrollPane work cross browser and don't cause any
+                                                new problems. Note that these examples aren't meant to look pretty, they
+                                                merely highlight different bits of functionaity which are available. If
+                                                you want examples of jScrollPane looking good then check out the
+                                                themes.</p>
                                         </div>
                                     </div>
                                     <div class="scrollbar style3">
                                         <div class="inner">
-                                            <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                                            <p>These examples show very basic functionality and exist so that I can test
+                                                that any changes to jScrollPane work cross browser and don't cause any
+                                                new problems. Note that these examples aren't meant to look pretty, they
+                                                merely highlight different bits of functionaity which are available. If
+                                                you want examples of jScrollPane looking good then check out the
+                                                themes.</p>
                                         </div>
                                     </div>
                                     <div class="scrollbar style4">
                                         <div class="inner">
-                                            <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                                            <p>These examples show very basic functionality and exist so that I can test
+                                                that any changes to jScrollPane work cross browser and don't cause any
+                                                new problems. Note that these examples aren't meant to look pretty, they
+                                                merely highlight different bits of functionaity which are available. If
+                                                you want examples of jScrollPane looking good then check out the
+                                                themes.</p>
                                         </div>
                                     </div>
                                     <!--/ ScrollBars -->
@@ -1109,7 +1211,8 @@ vanilla-cream
                             <p>Use styled Progress Bars on your site.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Styled Progress Bar require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Styled Progress Bar require next files to be included into <code>&lt;head></code>
+                                    section of the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery-ui.min.js">&lt;/script>
 &lt;script src="js/progressbar.js">&lt;/script>
@@ -1130,7 +1233,7 @@ vanilla-cream
                                     <div class="remained"></div>
                                 </div>
                                 <script type="text/javascript">
-                                    $(document).ready(function() {
+                                    $(document).ready(function () {
                                         $('#progressBar1').anim_progressbar({
                                             totaltime: 600
                                         });
@@ -1171,10 +1274,12 @@ vanilla-cream
                         <h2 id="range-slider">Range Slider</h2>
 
                         <div class="description">
-                            <p>Range Slider allow users to select a value from a numerical range by simply dragging a slider.</p>
+                            <p>Range Slider allow users to select a value from a numerical range by simply dragging a
+                                slider.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Range Slider require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Range Slider require next files to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery-ui.min.js">&lt;/script>
 &lt;script src="js/jquery.slider.bundle.js">&lt;/script>
@@ -1190,8 +1295,8 @@ vanilla-cream
                                 <div class="range-slider">
                                     <input id="price_range" type="text" name="price_range" value="120;360">
                                 </div>
-                                <script type="text/javascript" >
-                                    jQuery(document).ready(function($) {
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function ($) {
                                         // Price Range Input
                                         $("#price_range").rangeslider({
                                             from: 10,
@@ -1245,13 +1350,14 @@ vanilla-cream
                         <div class="description">
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Knob elements require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Knob elements require next file to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;script type="text/javascript" src="js/knobRot-0.2.2.js">&lt;/script>
                                 </pre>
                             </div>
                         </div>
-                        
+
                         <!-- Volume Knob -->
                         <div class="description">
                             <h3 id="knobs-volume">Volume Knob</h3>
@@ -1262,9 +1368,9 @@ vanilla-cream
                             <div class="example-item alt-color">
                                 <!-- Volume control -->
                                 <div class="widget-knob widget-volume">
-                                    <input type="text" value="100"  autocomplete="off" id="volume" />
+                                    <input type="text" value="100" autocomplete="off" id="volume"/>
                                     <script type="text/javascript">
-                                        $(document).ready(function() {
+                                        $(document).ready(function () {
                                             $('#volume').knobRot({
                                                 'classes': ['volume'],
                                                 'dragVertical': false,
@@ -1280,7 +1386,7 @@ vanilla-cream
                                         });
                                     </script>
                                 </div>
-                                <!--/ Volume control -->    
+                                <!--/ Volume control -->
                             </div>
                             <div class="example-code">
                                 <pre class="prettyprint">
@@ -1323,9 +1429,9 @@ vanilla-cream
                             <div class="example-item alt-color">
                                 <!-- Balance control -->
                                 <div class="widget-knob widget-balance">
-                                    <input type="text" value="0" autocomplete="off" id="balance" />
+                                    <input type="text" value="0" autocomplete="off" id="balance"/>
                                     <script type="text/javascript">
-                                        $(document).ready(function() {
+                                        $(document).ready(function () {
                                             $('#balance').knobRot({
                                                 'classes': ['balance'],
                                                 'dragVertical': false,
@@ -1409,7 +1515,7 @@ vanilla-cream
                                         <li class="menu-level-0"><a href="#"><span>Contacts</span></a></li>
                                     </ul>
                                 </div>
-                                <!--/ Website Menu -->    
+                                <!--/ Website Menu -->
                             </div>
                             <div class="example-code">
                                 <pre class="prettyprint">
@@ -1450,13 +1556,19 @@ vanilla-cream
                                     <div class="col-sm-6">
                                         <!-- Dropdown Menu -->
                                         <div class="dropdownMenu gradient">
-                                            <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="ico-cat"></i>Options</a>
+                                            <a id="drop2" href="#" role="button" class="dropdown-toggle"
+                                               data-toggle="dropdown"><i class="ico-cat"></i>Options</a>
                                             <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat2"></i>Home</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat3"></i>Like</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat4"></i>Settings</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat5"></i>Messages</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat6"></i>Conversation</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat2"></i>Home</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat3"></i>Like</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat4"></i>Settings</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat5"></i>Messages</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat6"></i>Conversation</a></li>
                                             </ul>
                                         </div>
                                         <!--/ Dropdown Menu -->
@@ -1464,13 +1576,19 @@ vanilla-cream
                                     <div class="col-sm-6">
                                         <!-- Dropdown Menu -->
                                         <div class="dropdownMenu style2 gradient">
-                                            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="ico-cat ico-cat1"></i>Products</a>
+                                            <a id="drop1" href="#" role="button" class="dropdown-toggle"
+                                               data-toggle="dropdown"><i class="ico-cat ico-cat1"></i>Products</a>
                                             <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat2"></i>Home</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat3"></i>Like</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat4"></i>Settings</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat5"></i>Messages</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="ico-cat ico-cat6"></i>Conversation</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat2"></i>Home</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat3"></i>Like</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat4"></i>Settings</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat5"></i>Messages</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i
+                                                        class="ico-cat ico-cat6"></i>Conversation</a></li>
                                             </ul>
                                         </div>
                                         <!--/ Dropdown Menu -->
@@ -1525,21 +1643,29 @@ vanilla-cream
                                         <div class="tabs_framed styled">
                                             <div class="inner">
                                                 <ul class="tabs clearfix active_bookmark1">
-                                                    <li class="active"><a href="#events" data-toggle="tab">Events</a></li>
-                                                    <li><a href="#reminders" data-toggle="tab"><sup class="note">3</sup>Reminders</a></li>
+                                                    <li class="active"><a href="#events" data-toggle="tab">Events</a>
+                                                    </li>
+                                                    <li><a href="#reminders" data-toggle="tab"><sup class="note">3</sup>Reminders</a>
+                                                    </li>
                                                 </ul>
 
                                                 <div class="tab-content clearfix">
                                                     <div class="tab-pane fade in active" id="events">
-                                                        <div class="tab_image pull-left"><img src="../vanilla-cream-css/images/temp/tabimage4.png" alt="" /></div>
+                                                        <div class="tab_image pull-left"><img
+                                                                src="../vanilla-cream-css/images/temp/tabimage4.png"
+                                                                alt=""/></div>
                                                         <h4>4 august 2013</h4>
-                                                        <p>He made his film debut with a minor part in Back to the Future Part II</p>
+                                                        <p>He made his film debut with a minor part in Back to the
+                                                            Future Part II</p>
                                                         <a href="#" class="see-more"><span>See more</span></a>
                                                     </div>
                                                     <div class="tab-pane fade" id="reminders">
-                                                        <div class="tab_image pull-right"><img src="../vanilla-cream-css/images/temp/tabimage5.png" alt="" /></div>
+                                                        <div class="tab_image pull-right"><img
+                                                                src="../vanilla-cream-css/images/temp/tabimage5.png"
+                                                                alt=""/></div>
                                                         <h4>5 November</h4>
-                                                        <p>He made his film debut with a minor part in Back to the Future Part II</p>
+                                                        <p>He made his film debut with a minor part in Back to the
+                                                            Future Part II</p>
                                                         <a href="#" class="see-more"><span>See more</span></a>
                                                     </div>
                                                 </div>
@@ -1581,7 +1707,8 @@ vanilla-cream
                         <div class="description">
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>All the forms require next file to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>All the forms require next file to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.powerful-placeholder.min.js">&lt;/script>
                                 </pre>
@@ -1594,7 +1721,8 @@ vanilla-cream
                             <p></p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Contact Form require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Contact Form require next files to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;link rel="stylesheet" href="css/chosen.css">
 &lt;script src="js/jquery.chosen.min.js" type="text/javascript">&lt;/script>
@@ -1613,9 +1741,9 @@ vanilla-cream
                                             <div class="add-comment-title gradient"><h3>Write a message</h3></div>
                                             <div class="comment-form">
                                                 <script type="text/javascript">
-                                                    bkLib.onDomLoaded(function() {
+                                                    bkLib.onDomLoaded(function () {
                                                         var myNicEditor = new nicEditor({
-                                                            buttonList : [
+                                                            buttonList: [
                                                                 'bold',
                                                                 'italic',
                                                                 'underline',
@@ -1632,42 +1760,51 @@ vanilla-cream
                                                     setTimeout(function () {
                                                         var nic_width = $('.nicEdit-panel').width();
                                                         $('.nicEdit-container').css('width', nic_width);
-                                                        $('.nicEdit-main').css('width', nic_width-24);
+                                                        $('.nicEdit-main').css('width', nic_width - 24);
                                                     }, 2000);
-                                                    $(window).resize(function() {
+                                                    $(window).resize(function () {
                                                         var nic_width = $('.nicEdit-panel').width();
                                                         $('.nicEdit-container').css('width', nic_width);
-                                                        $('.nicEdit-main').css('width', nic_width-24);
+                                                        $('.nicEdit-main').css('width', nic_width - 24);
                                                     });
                                                 </script>
                                                 <form action="#" method="post" id="commentForm" class="ajax_form">
                                                     <div class="form-inner">
                                                         <div class="field_select">
                                                             <label for="contact_name" class="label_title">Name:</label>
-                                                            <select name="contact_name" id="contact_name" multiple data-placeholder="Your Selection">
+                                                            <select name="contact_name" id="contact_name" multiple
+                                                                    data-placeholder="Your Selection">
                                                                 <option value='example1@gmail.com'>Mike Charley</option>
                                                                 <option value='example2@gmail.com'>Andy Lurs</option>
-                                                                <option value='example3@gmail.com'>Toby Lightman</option>
+                                                                <option value='example3@gmail.com'>Toby Lightman
+                                                                </option>
                                                                 <option value='example4@gmail.com'>Lene Marlin</option>
                                                                 <option value='example5@gmail.com'>Deep Purple</option>
                                                             </select>
                                                         </div>
                                                         <div class="field_text">
                                                             <label for="subject" class="label_title">Subject:</label>
-                                                            <input type="text" name="subject" id="subject" value="" placeholder="ex. Happy New Year!" class="inputtext input_middle required" />
+                                                            <input type="text" name="subject" id="subject" value=""
+                                                                   placeholder="ex. Happy New Year!"
+                                                                   class="inputtext input_middle required"/>
                                                         </div>
                                                         <div class="clear"></div>
                                                         <div class="field_text field_textarea">
                                                             <div id="edit_buttons" class="edit_buttons gradient"></div>
-                                                            <label for="styled_message" class="label_title">Message:</label>
-                                                            <textarea cols="30" rows="10" name="styled_message" id="styled_message" class="textarea textarea_middle"></textarea>
+                                                            <label for="styled_message"
+                                                                   class="label_title">Message:</label>
+                                                            <textarea cols="30" rows="10" name="styled_message"
+                                                                      id="styled_message"
+                                                                      class="textarea textarea_middle"></textarea>
                                                         </div>
                                                         <div class="clear"></div>
                                                     </div>
 
                                                     <div class="rowSubmit">
-                                                        <a onclick="document.getElementById('commentForm').reset();return false" href="#" class="link-reset btn btn-white"><span>Discard</span></a>
-                                                        <span class="btn"><input type="submit" id="send" value="Send" /></span>
+                                                        <a onclick="document.getElementById('commentForm').reset();return false"
+                                                           href="#"
+                                                           class="link-reset btn btn-white"><span>Discard</span></a>
+                                                        <span class="btn"><input type="submit" id="send" value="Send"/></span>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1766,7 +1903,8 @@ vanilla-cream
                             <p></p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Login Form require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Login Form require next files to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/jquery.customInput.js">&lt;/script>
 &lt;script type="text/javascript" src="js/custom.js">&lt;/script>
@@ -1784,22 +1922,31 @@ vanilla-cream
                                                 <form action="#" method="post" class="loginform">
                                                     <div class="field_text">
                                                         <label for="user_login2" class="label_title">Email</label>
-                                                        <input type="text" name="log2" id="user_login2" value="" placeholder="Email" />
+                                                        <input type="text" name="log2" id="user_login2" value=""
+                                                               placeholder="Email"/>
                                                         <span class="input_icon input_email"></span>
                                                     </div>
                                                     <div class="field_text">
                                                         <label for="user_pass2" class="label_title">Password</label>
-                                                        <input type="password" name="pwd2" id="user_pass2" value="" placeholder="Password" />
+                                                        <input type="password" name="pwd2" id="user_pass2" value=""
+                                                               placeholder="Password"/>
                                                         <span class="input_icon input_pass"></span>
                                                     </div>
                                                     <div class="rowRemember clearfix">
                                                         <div class="forgetmenot input_styled checklist">
-                                                            <div class="rowCheckbox checkbox-middle"><input type="checkbox" name="remember2" id="remember2" value="" checked><label for="remember2">Remember&nbsp;me?</label></div>
+                                                            <div class="rowCheckbox checkbox-middle"><input
+                                                                    type="checkbox" name="remember2" id="remember2"
+                                                                    value="" checked><label for="remember2">Remember&nbsp;me?</label>
+                                                            </div>
                                                         </div>
-                                                        <span class="forget_password"><a href="#">Forgot Password?</a></span>
+                                                        <span class="forget_password"><a
+                                                                href="#">Forgot Password?</a></span>
                                                     </div>
                                                     <div class="rowSubmit">
-                                                        <span class="btn btn-hover"><input type="submit" name="login-submit2" id="login-submit2" value="Subscribe Now" /></span>
+                                                        <span class="btn btn-hover"><input type="submit"
+                                                                                           name="login-submit2"
+                                                                                           id="login-submit2"
+                                                                                           value="Subscribe Now"/></span>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1860,8 +2007,11 @@ vanilla-cream
                                             <div class="inner">
                                                 <form method="get" id="searchform2" action="#">
                                                     <div class="clearfix">
-                                                        <span class="btn"><input type="submit" value="Search" /></span>
-                                                        <div class="field_text"><input name="search2" value="" type="text" placeholder="Type word here" /></div>
+                                                        <span class="btn"><input type="submit" value="Search"/></span>
+                                                        <div class="field_text"><input name="search2" value=""
+                                                                                       type="text"
+                                                                                       placeholder="Type word here"/>
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1900,8 +2050,10 @@ vanilla-cream
                         <!-- Pricing List Style 1 -->
                         <div class="description">
                             <p>
-                                Use pricing items to announce prices for your services. Two different pricing styles available. Add class <code>col_active</code> to <code>price_col</code> to highlight pricing item. Add color class to <code>price_col</code> class to change item color.
-                                <br />Available color classes are the next: <code>price_col_green</code>, <code>price_col_light</code>.
+                                Use pricing items to announce prices for your services. Two different pricing styles
+                                available. Add class <code>col_active</code> to <code>price_col</code> to highlight
+                                pricing item. Add color class to <code>price_col</code> class to change item color.
+                                <br/>Available color classes are the next: <code>price_col_green</code>, <code>price_col_light</code>.
                             </p>
                             <h3 id="pricing-def">Pricing Items default style</h3>
                             <h4>Example</h4>
@@ -1934,7 +2086,9 @@ vanilla-cream
                                                         </div>
                                                     </div>
                                                     <div class="price_col_foot">
-                                                        <div class="sign_up"><a href="#" class="btn"><span>Try a Week</span></a></div>
+                                                        <div class="sign_up"><a href="#"
+                                                                                class="btn"><span>Try a Week</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1963,7 +2117,9 @@ vanilla-cream
                                                         </div>
                                                     </div>
                                                     <div class="price_col_foot">
-                                                        <div class="sign_up"><a href="#" class="btn btn-green btn-large"><span>Buy Now</span></a></div>
+                                                        <div class="sign_up"><a href="#"
+                                                                                class="btn btn-green btn-large"><span>Buy Now</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1992,7 +2148,9 @@ vanilla-cream
                                                         </div>
                                                     </div>
                                                     <div class="price_col_foot">
-                                                        <div class="sign_up"><a href="#" class="btn"><span>Subscribe Now</span></a></div>
+                                                        <div class="sign_up"><a href="#"
+                                                                                class="btn"><span>Subscribe Now</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2129,7 +2287,8 @@ vanilla-cream
                         <!-- Pricing List Style 2 -->
                         <div class="description">
                             <h3 id="pricing-alt">Pricing Items alternative style</h3>
-                            <p>To switch to alternative pricing style just add <code>price_style2</code> class to <code>pricing_box</code>.</p>
+                            <p>To switch to alternative pricing style just add <code>price_style2</code> class to <code>pricing_box</code>.
+                            </p>
                             <h4>Example</h4>
                         </div>
                         <div class="example">
@@ -2157,7 +2316,9 @@ vanilla-cream
                                                     </div>
                                                 </div>
                                                 <div class="price_col_foot">
-                                                    <div class="sign_up"><a href="#" class="btn btn-large btn-green"><span>Buy Now</span></a></div>
+                                                    <div class="sign_up"><a href="#"
+                                                                            class="btn btn-large btn-green"><span>Buy Now</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2186,7 +2347,9 @@ vanilla-cream
                                                     </div>
                                                 </div>
                                                 <div class="price_col_foot">
-                                                    <div class="sign_up"><a href="#" class="btn"><span>30 Day Free Trial</span></a></div>
+                                                    <div class="sign_up"><a href="#"
+                                                                            class="btn"><span>30 Day Free Trial</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2320,14 +2483,17 @@ vanilla-cream
                                             <div class="comment-body">
                                                 <div class="comment-arrow"></div>
                                                 <div class="comment-avatar">
-                                                    <div class="avatar"><img src="../vanilla-cream-css/images/temp/avatar3.png" alt="" /></div>
+                                                    <div class="avatar"><img
+                                                            src="../vanilla-cream-css/images/temp/avatar3.png" alt=""/>
+                                                    </div>
                                                 </div>
                                                 <div class="comment-text">
                                                     <div class="comment-author clearfix">
                                                         <a href="#" class="link-author">Elijah Wood</a>
                                                     </div>
                                                     <div class="comment-entry">
-                                                        He made his film debut with a minor part in Back to the Future Part II (1989), then landed a succession.
+                                                        He made his film debut with a minor part in Back to the Future
+                                                        Part II (1989), then landed a succession.
                                                     </div>
                                                 </div>
                                                 <div class="clear"></div>
@@ -2376,7 +2542,8 @@ vanilla-cream
                             <p>Use Video.js player to play video content.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Video Player require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Video Player require next files to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;link href="css/video-js.css" rel="stylesheet">
 &lt;script src="js/video.js">&lt;/script>
@@ -2392,21 +2559,24 @@ vanilla-cream
                                         <div class="video_player">
                                             <div class="inner">
                                                 <video id="my_video_1" class="video-js" controls loop
-                                                       preload="auto" poster="../vanilla-cream-css/images/temp/vjs_poster2.png"
+                                                       preload="auto"
+                                                       poster="../vanilla-cream-css/images/temp/vjs_poster2.png"
                                                        data-setup="{}">
-                                                    <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
+                                                    <source src="http://test.themefuse.com/artiom/galapagos.mp4"
+                                                            type='video/mp4'>
                                                 </video>
                                                 <script>
-                                                    _V_("my_video_1").ready(function(){
+                                                    _V_("my_video_1").ready(function () {
                                                         var myPlayer = this;
-                                                        var aspectRatio = 190/390;
+                                                        var aspectRatio = 190 / 390;
                                                         var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
-                                                        myPlayer.width(width).height( width * aspectRatio );
+                                                        myPlayer.width(width).height(width * aspectRatio);
 
-                                                        function resizeVideoJS(){
+                                                        function resizeVideoJS() {
                                                             var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
-                                                            myPlayer.width(width).height( width * aspectRatio );
+                                                            myPlayer.width(width).height(width * aspectRatio);
                                                         }
+
                                                         resizeVideoJS();
                                                         window.onresize = resizeVideoJS;
                                                     });
@@ -2462,7 +2632,8 @@ vanilla-cream
                             <p>Use jPlayer to play audio content.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Audio Player require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Audio Player require next files to be included into <code>&lt;head></code> section of
+                                    the page:</p>
                                 <pre class="prettyprint">
 &lt;link href="css/jplayer.css" rel="stylesheet">
 &lt;script src="js/jquery.jplayer.min.js">&lt;/script>
@@ -2498,18 +2669,34 @@ vanilla-cream
                                                                     </div>
                                                                 </div>
                                                                 <ul class="jp-controls">
-                                                                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-                                                                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-                                                                    <li><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a></li>
-                                                                    <li><a href="javascript:;" class="jp-play gradient" tabindex="1">play</a></li>
-                                                                    <li><a href="javascript:;" class="jp-pause gradient" tabindex="1">pause</a></li>
-                                                                    <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-                                                                    <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-                                                                    <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-                                                                    <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
-                                                                    <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-                                                                    <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-                                                                    <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                                                                    <li><a href="javascript:;" class="jp-mute"
+                                                                           tabindex="1" title="mute">mute</a></li>
+                                                                    <li><a href="javascript:;" class="jp-unmute"
+                                                                           tabindex="1" title="unmute">unmute</a></li>
+                                                                    <li><a href="javascript:;"
+                                                                           class="jp-previous disabled" tabindex="1">previous</a>
+                                                                    </li>
+                                                                    <li><a href="javascript:;" class="jp-play gradient"
+                                                                           tabindex="1">play</a></li>
+                                                                    <li><a href="javascript:;" class="jp-pause gradient"
+                                                                           tabindex="1">pause</a></li>
+                                                                    <li><a href="javascript:;" class="jp-next"
+                                                                           tabindex="1">next</a></li>
+                                                                    <li><a href="javascript:;" class="jp-stop"
+                                                                           tabindex="1">stop</a></li>
+                                                                    <li><a href="javascript:;" class="jp-repeat"
+                                                                           tabindex="1" title="repeat">repeat</a></li>
+                                                                    <li><a href="javascript:;" class="jp-repeat-off"
+                                                                           tabindex="1" title="repeat off">repeat
+                                                                        off</a></li>
+                                                                    <li><a href="javascript:;" class="jp-volume-max"
+                                                                           tabindex="1" title="max volume">max
+                                                                        volume</a></li>
+                                                                    <li><a href="javascript:;" class="jp-shuffle"
+                                                                           tabindex="1" title="shuffle">shuffle</a></li>
+                                                                    <li><a href="javascript:;" class="jp-shuffle-off"
+                                                                           tabindex="1" title="shuffle off">shuffle
+                                                                        off</a></li>
                                                                 </ul>
                                                                 <div class="jp-volume-bar">
                                                                     <div class="jp-volume-bar-value"></div>
@@ -2518,13 +2705,14 @@ vanilla-cream
                                                         </div>
                                                         <div class="jp-no-solution">
                                                             <span>Update Required</span>
-                                                            <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                            <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash
+                                                                plugin</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Widget Audio Player -->    
+                                        <!-- Widget Audio Player -->
                                     </div>
                                 </div>
                             </div>
@@ -2643,37 +2831,50 @@ vanilla-cream
                                                     <!-- Carousel items -->
                                                     <div class="carousel-inner">
                                                         <div class="active item">
-                                                            <img src="../vanilla-cream-css/images/temp/top-slider-5.jpg" alt="" />
-                                                            <div class="carousel-title"><h6>Ratatouille</h6><p>The latest unstoppable hero</p></div>
+                                                            <img src="../vanilla-cream-css/images/temp/top-slider-5.jpg"
+                                                                 alt=""/>
+                                                            <div class="carousel-title"><h6>Ratatouille</h6>
+                                                                <p>The latest unstoppable hero</p></div>
                                                         </div>
                                                         <div class="item">
-                                                            <img src="../vanilla-cream-css/images/temp/top-slider-2.jpg" alt="" />
-                                                            <div class="carousel-title"><h6>Horton</h6><p>Change your fate</p></div>
+                                                            <img src="../vanilla-cream-css/images/temp/top-slider-2.jpg"
+                                                                 alt=""/>
+                                                            <div class="carousel-title"><h6>Horton</h6>
+                                                                <p>Change your fate</p></div>
                                                         </div>
                                                         <div class="item">
-                                                            <img src="../vanilla-cream-css/images/temp/top-slider-3.jpg" alt="" />
-                                                            <div class="carousel-title"><h6>Surf up</h6><p>Change your fate</p></div>
+                                                            <img src="../vanilla-cream-css/images/temp/top-slider-3.jpg"
+                                                                 alt=""/>
+                                                            <div class="carousel-title"><h6>Surf up</h6>
+                                                                <p>Change your fate</p></div>
                                                         </div>
                                                         <div class="item">
-                                                            <img src="../vanilla-cream-css/images/temp/top-slider-4.jpg" alt="" />
-                                                            <div class="carousel-title"><h6>Wall-e</h6><p>Disney Pixar</p></div>
+                                                            <img src="../vanilla-cream-css/images/temp/top-slider-4.jpg"
+                                                                 alt=""/>
+                                                            <div class="carousel-title"><h6>Wall-e</h6>
+                                                                <p>Disney Pixar</p></div>
                                                         </div>
                                                         <div class="item">
-                                                            <img src="../vanilla-cream-css/images/temp/top-slider-1.jpg" alt="" />
-                                                            <div class="carousel-title"><h6>Ice Age</h6><p>Change your fate</p></div>
+                                                            <img src="../vanilla-cream-css/images/temp/top-slider-1.jpg"
+                                                                 alt=""/>
+                                                            <div class="carousel-title"><h6>Ice Age</h6>
+                                                                <p>Change your fate</p></div>
                                                         </div>
                                                     </div>
                                                     <!-- Carousel indicators -->
                                                     <ol class="carousel-indicators">
-                                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="0"
+                                                            class="active"></li>
                                                         <li data-target="#myCarousel" data-slide-to="1"></li>
                                                         <li data-target="#myCarousel" data-slide-to="2"></li>
                                                         <li data-target="#myCarousel" data-slide-to="3"></li>
                                                         <li data-target="#myCarousel" data-slide-to="4"></li>
                                                     </ol>
                                                     <!-- Carousel nav -->
-                                                    <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-                                                    <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                                                    <a class="carousel-control left" href="#myCarousel"
+                                                       data-slide="prev"></a>
+                                                    <a class="carousel-control right" href="#myCarousel"
+                                                       data-slide="next"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2735,7 +2936,8 @@ vanilla-cream
                             <p>Calendar allow users to select multiple dates.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Calendar require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Calendar require next files to be included into <code>&lt;head></code> section of the
+                                    page:</p>
                                 <pre class="prettyprint">
 &lt;script src="js/libs/jquery-ui.min.js">&lt;/script>
 &lt;script src="js/jquery-ui.multidatespicker.js">&lt;/script>
@@ -2751,22 +2953,23 @@ vanilla-cream
                                         <!-- widget calendar-->
                                         <div class="widget-container widget_calendar boxed styled">
                                             <div class="inner">
-                                                <input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+                                                <input type="text" name="date_departure" class="inputField" value=""
+                                                       id="date_departure">
                                                 <script>
                                                     // <![CDATA[
-                                                    jQuery(document).ready(function($) {
+                                                    jQuery(document).ready(function ($) {
 
-                                                        function assignCalendar(id){
+                                                        function assignCalendar(id) {
                                                             $('<div class="calendar" />')
-                                                                    .insertAfter( $(id) )
-                                                                    .multiDatesPicker({
-                                                                        dateFormat: 'yy-mm-dd',
-                                                                        minDate: new Date(),
-                                                                        maxDate: '+1y',
-                                                                        altField: id,
-                                                                        firstDay: 1,
-                                                                        showOtherMonths: true
-                                                                    }).prev().hide();
+                                                                .insertAfter($(id))
+                                                                .multiDatesPicker({
+                                                                    dateFormat: 'yy-mm-dd',
+                                                                    minDate: new Date(),
+                                                                    maxDate: '+1y',
+                                                                    altField: id,
+                                                                    firstDay: 1,
+                                                                    showOtherMonths: true
+                                                                }).prev().hide();
                                                         }
 
                                                         assignCalendar('#date_departure');
@@ -2833,7 +3036,8 @@ vanilla-cream
                                         <!-- Avatar Placeholder -->
                                         <div class="widget-container widget_avatar boxed boxed-cream">
                                             <div class="inner clearfix">
-                                                <div class="avatar"><img src="../vanilla-cream-css/images/temp/avatar.png" alt="" /></div>
+                                                <div class="avatar"><img
+                                                        src="../vanilla-cream-css/images/temp/avatar.png" alt=""/></div>
                                                 <h5>Bradley Smith</h5>
                                                 <span class="subtitle">Web designer</span>
                                                 <div class="follow">
@@ -2881,7 +3085,8 @@ vanilla-cream
                             <p>Build graphs with Flot - attractive JavaScript plotting for jQuery.</p>
                             <div class="callout">
                                 <h5>Element specific usage</h5>
-                                <p>Flot require next files to be included into <code>&lt;head></code> section of the page:</p>
+                                <p>Flot require next files to be included into <code>&lt;head></code> section of the
+                                    page:</p>
                                 <pre class="prettyprint">
 &lt;!--[if lte IE 8]>
     &lt;script type="text/javascript" src="js/excanvas.min.js">&lt;/script>

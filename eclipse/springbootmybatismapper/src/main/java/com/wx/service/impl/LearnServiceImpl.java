@@ -15,24 +15,24 @@ import org.springframework.stereotype.Service;
 
 @Service
 /**
- * 
+ *
  * @author wx
  *
  *         Dec 3, 2018
  */
 public class LearnServiceImpl extends BaseService<LearnResource> implements LearnService {
-	@Autowired
-	private LearnResourceMapper learnResourceMapper;
+    @Autowired
+    private LearnResourceMapper learnResourceMapper;
 
-	@Override
-	public void deleteBatch(Long[] ids) {
-		Arrays.stream(ids).forEach(id -> learnResourceMapper.deleteByPrimaryKey(id));
-	}
+    @Override
+    public void deleteBatch(Long[] ids) {
+        Arrays.stream(ids).forEach(id -> learnResourceMapper.deleteByPrimaryKey(id));
+    }
 
-	@Override
-	public List<LearnResource> queryLearnResouceList(Page<LearnQueryLearnListReq> page) {
-		PageHelper.startPage(page.getPage(), page.getRows());
-		return learnResourceMapper.queryLearnResouceList(page.getCondition());
-	}
+    @Override
+    public List<LearnResource> queryLearnResouceList(Page<LearnQueryLearnListReq> page) {
+        PageHelper.startPage(page.getPage(), page.getRows());
+        return learnResourceMapper.queryLearnResouceList(page.getCondition());
+    }
 
 }

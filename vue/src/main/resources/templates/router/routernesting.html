@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+</head>
+<body>
+<div id="app">
+    <router-link to="/product">商品管理</router-link>
+
+    <router-view></router-view>
+</div>
+<template id="product">
+    <div>
+        <h1>商品管理</h1>
+        <router-link to="/product/add">商品添加</router-link>
+        <router-link to="/product/edit">商品编辑</router-link>
+        <router-view></router-view>
+    </div>
+</template>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script src="../../static/js/vue-router.js"></script>
+<script>
+    //声明组件模板
+    const product = {
+        template: '#product'
+    };
+
+    const add = {
+        template: '<h4>商品添加</h4>'
+    };
+
+    const edit = {
+        template: '<h4>商品编辑</h4>'
+    };
+
+    //定义路由对象
+    const router = new VueRouter({
+            routes: [
+                {path: '/', redirect: '/product'},
+                {
+                    path: '/product',
+                    component: product,
+                    children: [
+                        {path: 'add', component: add},
+                        {path: 'edit', component: edit},
+                    ]
+                },
+            ]
+        })
+    ;
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router
+    });
+</script>
+</html>

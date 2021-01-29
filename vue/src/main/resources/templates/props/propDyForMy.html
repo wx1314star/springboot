@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>prop组件中定义自己的数据</title>
+</head>
+<body>
+<div id="app">
+    <!---->
+    <login :username="username"></login>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script>
+    //声明一个组件配置对象
+    const login = {
+        template: '<div><h2>欢迎：{{name}}==={{username}}</h2></div>',
+        //组件中自己定义data数据
+        data() {
+            return {
+                name: this.username
+            };
+        },
+        props: ['username']
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            username: "小黑"
+        },
+        methods: {},
+        components: {
+            //注册组件
+            login
+        }
+    });
+</script>
+</html>

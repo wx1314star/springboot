@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>prop组件中定义自己的数据</title>
+</head>
+<body>
+<div id="app">
+    <login></login>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script>
+    //声明一个组件配置对象
+    // const login = {
+    //     //组件数据定义
+    //     template: '<div><h1>{{msg}}华信智原</h1><ul><li v-for="item,index in lists">{{index}}{{item}}</li></ul></div>',
+    //     data() {
+    //         //组件自己内部数据
+    //         return {
+    //             msg: "hello",
+    //             lists: ['java', 'spring', 'springboot']
+    //         }
+    //     }
+    // }
+
+    //组件定义事件
+    const login = {
+        template: '<div><input type="button" value="点我触发组件中的事件" @click="change"/></div>',
+        data() {
+            return {
+                name: '小陈'
+            };
+        },
+        methods: {
+            change() {
+                alert(this.name);
+                alert('触发事件');
+            }
+        }
+    }
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        components: {
+            //注册组件
+            login
+        }
+    });
+</script>
+</html>

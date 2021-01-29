@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-router</title>
+</head>
+<body>
+<div id="app">
+    <a href="#/login">点我登录</a>
+    <a href="#/register">点我注册</a>
+    <!--显示路由组件-->
+    <router-view></router-view>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<!--引入vue-router-->
+<script src="../../static/js/vue-router2.0.js"></script>
+<script>
+    //声明组件模板
+    const login = {
+        template: '<h1>登录</h1>'
+    };
+
+    //声明组件模板
+    const register = {
+        template: '<h1>注册</h1>'
+    };
+
+    //创建路由对象
+    const router = new VueRouter({
+        routes: [
+            {path: '/login', component: login},
+            {path: '/register', component: register},
+        ]
+    });
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            username: "小陈",
+        },
+        methods: {},
+        //设置路由对象
+        router: router
+    });
+</script>
+</html>

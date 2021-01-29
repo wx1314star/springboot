@@ -16,12 +16,12 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan(basePackages = "com.wx.dao", markerInterface = MyMapper.class)
 public class Application extends SpringBootServletInitializer {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Application.class);
-	}
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Application.class);
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }

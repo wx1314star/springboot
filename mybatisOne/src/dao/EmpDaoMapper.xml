@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- 
+	mapper 用来管理DAO接口
+	namespace: 当前mapper配置文件管理的是哪个DAO接口(包.接口名)
+
+ -->
+<mapper namespace="dao.EmpDao">
+    <!--
+    查询:select标签
+		id :接口中的方法名
+		parameterType: 参数类型
+		resultType   : 返回结果类型  自动封装
+		注意:sql语句后不要出现";"号
+		resultMap: 返回结果集
+    -->
+    <resultMap id="EmpList" type="Emp">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="birthday" property="birthday" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <!--动态sql-->
+    <sql id="commentSql">
+        id, name, age, birthday
+    </sql>
+    <!--根据id查询Emp对象-->
+    <select id="getEmpById" parameterType="integer" resultType="Emp">
+        select
+        <include refid="commentSql"/>
+        from `t_emp`
+        where `id` = #{id}
+    </select>
+    <!--查询所有-->
+    <select id="findAll" resultMap="EmpList">
+        select `id`, `name`, `age`, `birthday`
+        from `t_emp`
+    </select>
+    <!--根据id和name查询Emp对象-->
+    <select id="getEmpByIdAndName" resultType="entity.Emp">
+        select `id`, `name`, `age`, `birthday`
+        from `t_emp`
+        where `id` = #{id}
+        and `name` = #{name}
+    </select>
+    <!--插入Emp对象-->
+    <insert id="insert" parameterType="entity.Emp">
+        insert into `t_emp`(`name`, `age`, `birthday`)
+        values (#{name}, #{age}, #{birthday})
+    </insert>
+    <!--更新Emp对象-->
+    <update id="update" parameterType="entity.Emp">
+        update `t_emp`
+        set `name`=#{name},
+        `age`=#{age},
+        `birthday`=#{birthday}
+        where `id` = #{id}
+    </update>
+    <select id="count" resultType="int">
+        select count(1)
+        from `t_emp`
+    </select>
+    <select id="selectPage" resultMap="EmpList">
+        select `id`, `name`, `age`, `birthday`
+        from `t_emp`
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="findLike" resultMap="EmpList">
+        select `id`, `name`, `age`, `birthday`
+        from `t_emp`
+        where `name` like concat('%', #{name}, '%')
+    </select>
+</mapper>

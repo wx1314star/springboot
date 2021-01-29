@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+</head>
+<body>
+<div id="app">
+    <!--    <a href="#/login">点我登录</a>-->
+    <!--    <a href="#/register">点我注册</a>-->
+    <!--router-link 好处:书写路由路径不需要# to:用来写路由路径 tag:用来渲染成html组件-->
+    <router-link to="/login" tag="button">点我登录</router-link>
+    <router-link to="/register" tag="button">点我注册</router-link>
+    <router-view></router-view>
+</div>
+</body>
+<!--引入vue开发版本-->
+<script src="../../static/js/vue.js"></script>
+<script src="../../static/js/vue-router.js"></script>
+<script>
+    const login = {
+        template: '<h1>用户登录</h1>'
+    }
+
+    const register = {
+        template: '<h1>用户注册</h1>'
+    }
+
+    const router = new VueRouter({
+        routes: [
+            //根目录代表默认路由
+            // {path: '/', component: login},
+            {path: '/', redirect: '/login'},
+            {path: '/login', component: login},
+            {path: '/register', component: register},
+        ]
+    });
+
+    const app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router
+    });
+</script>
+</html>
